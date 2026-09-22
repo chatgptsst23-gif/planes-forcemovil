@@ -1,0 +1,58 @@
+[
+  {
+    "numero": "1",
+    "titulo": "Línea base del SG-SST"
+  },
+  {
+    "numero": "2",
+    "titulo": "Estadísticas de accidentabilidad del periodo anterior"
+  },
+  {
+    "numero": "3",
+    "titulo": "Matriz de objetivos, metas e indicadores"
+  },
+  {
+    "numero": "4",
+    "titulo": "Matriz IPERC y riesgos prioritarios por área y subárea"
+  },
+  {
+    "numero": "5",
+    "titulo": "Mapa de riesgos"
+  },
+  {
+    "numero": "6",
+    "titulo": "Programa Anual de Seguridad y Salud en el Trabajo"
+  },
+  {
+    "numero": "7",
+    "titulo": "Programa Anual de Capacitación en SST"
+  },
+  {
+    "numero": "8",
+    "titulo": "Programa Anual de Preparación y Respuesta ante Emergencias"
+  },
+  {
+    "numero": "9",
+    "titulo": "Programa Anual de Salud Ocupacional"
+  },
+  {
+    "numero": "10",
+    "titulo": "Programa Anual de Inspecciones y Observaciones Preventivas"
+  },
+  {
+    "numero": "11",
+    "titulo": "Programa Anual de Monitoreos de Higiene Ocupacional por GES"
+  },
+  {
+    "numero": "12",
+    "titulo": "Ficha técnica de indicadores SST"
+  },
+  {
+    "numero": "13",
+    "titulo": "Herramienta computacional para el procesamiento de indicadores SST"
+  },
+  {
+    "numero": "14",
+    "titulo": "Presupuesto anual detallado por centro de costo"
+  }
+]

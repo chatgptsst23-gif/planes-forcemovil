@@ -1,1 +1,388 @@
-{"id":"ma","titulo":"Plan Anual de Gestión Ambiental","titulo_corto":"Plan de Medio Ambiente","descripcion":"Prevención, control y mitigación de los impactos ambientales de la operación.","codigo":"FM-MA-PL-001","version":"01","periodo":2027,"secciones":[{"numero":"1","titulo":"INTRODUCCIÓN","archivo":"secciones/01-introduccion.html","vacia":false,"subsecciones":[]},{"numero":"2","titulo":"OBJETIVO GENERAL Y OBJETIVOS ESPECÍFICOS","archivo":"secciones/02-objetivo-general-y-objetivos-especificos.html","vacia":false,"subsecciones":[]},{"numero":"3","titulo":"ALCANCE","archivo":"secciones/03-alcance.html","vacia":false,"subsecciones":[]},{"numero":"4","titulo":"DEFINICIONES Y ABREVIATURAS","archivo":"secciones/04-definiciones-y-abreviaturas.html","vacia":false,"subsecciones":[]},{"numero":"5","titulo":"MARCO LEGAL Y DOCUMENTOS DE REFERENCIA","archivo":"secciones/05-marco-legal-y-documentos-de-referencia.html","vacia":false,"subsecciones":[]},{"numero":"6","titulo":"CARACTERIZACIÓN AMBIENTAL DE FORCEMOVIL S.A.C.","archivo":"secciones/06-caracterizacion-ambiental-de-forcemovil-s-a-c.html","vacia":false,"subsecciones":[]},{"numero":"7","titulo":"POLÍTICA DE GESTIÓN AMBIENTAL","archivo":"secciones/07-politica-de-gestion-ambiental.html","vacia":false,"subsecciones":[]},{"numero":"8","titulo":"IDENTIFICACIÓN Y EVALUACIÓN DE ASPECTOS E IMPACTOS AMBIENTALES","archivo":"secciones/08-identificacion-y-evaluacion-de-aspectos-e-impact.html","vacia":false,"subsecciones":[]},{"numero":"9","titulo":"OBJETIVOS, METAS E INDICADORES AMBIENTALES","archivo":"secciones/09-objetivos-metas-e-indicadores-ambientales.html","vacia":false,"subsecciones":[]},{"numero":"10","titulo":"ORGANIZACIÓN, FUNCIONES Y RESPONSABILIDADES","archivo":"secciones/10-organizacion-funciones-y-responsabilidades.html","vacia":false,"subsecciones":[]},{"numero":"11","titulo":"CONTROLES OPERACIONALES","archivo":"secciones/11-controles-operacionales.html","vacia":false,"subsecciones":[]},{"numero":"12","titulo":"PROGRAMA ANUAL DE MANEJO AMBIENTAL","archivo":"secciones/12-programa-anual-de-manejo-ambiental.html","vacia":false,"subsecciones":[]},{"numero":"13","titulo":"PROGRAMA DE CAPACITACIÓN Y SENSIBILIZACIÓN AMBIENTAL","archivo":"secciones/13-programa-de-capacitacion-y-sensibilizacion-ambie.html","vacia":false,"subsecciones":[]},{"numero":"14","titulo":"MONITOREOS AMBIENTALES","archivo":"secciones/14-monitoreos-ambientales.html","vacia":false,"subsecciones":[]},{"numero":"15","titulo":"INSPECCIONES AMBIENTALES","archivo":"secciones/15-inspecciones-ambientales.html","vacia":false,"subsecciones":[]},{"numero":"16","titulo":"PREPARACIÓN Y RESPUESTA ANTE EMERGENCIAS AMBIENTALES","archivo":"secciones/16-preparacion-y-respuesta-ante-emergencias-ambient.html","vacia":false,"subsecciones":[]},{"numero":"17","titulo":"EVALUACIÓN DEL CUMPLIMIENTO LEGAL Y AUDITORÍAS","archivo":"secciones/17-evaluacion-del-cumplimiento-legal-y-auditorias.html","vacia":false,"subsecciones":[]},{"numero":"18","titulo":"NO CONFORMIDADES, ACCIONES CORRECTIVAS Y MEJORA CONTINUA","archivo":"secciones/18-no-conformidades-acciones-correctivas-y-mejora-c.html","vacia":false,"subsecciones":[]},{"numero":"19","titulo":"REVISIÓN POR LA DIRECCIÓN","archivo":"secciones/19-revision-por-la-direccion.html","vacia":false,"subsecciones":[]},{"numero":"20","titulo":"PRESUPUESTO ANUAL DE GESTIÓN AMBIENTAL","archivo":"secciones/20-presupuesto-anual-de-gestion-ambiental.html","vacia":false,"subsecciones":[]},{"numero":"21","titulo":"CONTROL DE DOCUMENTOS Y REGISTROS","archivo":"secciones/21-control-de-documentos-y-registros.html","vacia":false,"subsecciones":[]},{"numero":"22","titulo":"CONTROL DE CAMBIOS","archivo":"secciones/22-control-de-cambios.html","vacia":false,"subsecciones":[]}]}
+{
+  "id": "ma",
+  "titulo": "Plan Anual de Gestión Ambiental",
+  "titulo_corto": "Plan de Medio Ambiente",
+  "descripcion": "Prevención, control y mitigación de los impactos ambientales de la operación.",
+  "codigo": "FM-MA-PL-001",
+  "version": "01",
+  "periodo": 2027,
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "INTRODUCCIÓN",
+      "archivo": "secciones/01-introduccion.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "2",
+      "titulo": "OBJETIVO GENERAL Y OBJETIVOS ESPECÍFICOS",
+      "archivo": "secciones/02-objetivo-general-y-objetivos-especificos.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "2.1. Objetivo general",
+          "ancla": "2-1-objetivo-general"
+        },
+        {
+          "titulo": "2.2. Objetivos específicos",
+          "ancla": "2-2-objetivos-especificos"
+        }
+      ]
+    },
+    {
+      "numero": "3",
+      "titulo": "ALCANCE",
+      "archivo": "secciones/03-alcance.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "4",
+      "titulo": "DEFINICIONES Y ABREVIATURAS",
+      "archivo": "secciones/04-definiciones-y-abreviaturas.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "4.1. Definiciones",
+          "ancla": "4-1-definiciones"
+        },
+        {
+          "titulo": "4.2. Abreviaturas",
+          "ancla": "4-2-abreviaturas"
+        }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "MARCO LEGAL Y DOCUMENTOS DE REFERENCIA",
+      "archivo": "secciones/05-marco-legal-y-documentos-de-referencia.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "5.1. Normativa ambiental aplicable",
+          "ancla": "5-1-normativa-ambiental-aplicable"
+        },
+        {
+          "titulo": "5.2. Documentos internos de referencia",
+          "ancla": "5-2-documentos-internos-de-referencia"
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "CARACTERIZACIÓN AMBIENTAL DE FORCEMOVIL S.A.C.",
+      "archivo": "secciones/06-caracterizacion-ambiental-de-forcemovil-s-a-c.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "6.1. Descripción de procesos y sus interacciones con el ambiente",
+          "ancla": "6-1-descripcion-de-procesos-y-sus-interacciones"
+        },
+        {
+          "titulo": "6.2. Línea de base ambiental",
+          "ancla": "6-2-linea-de-base-ambiental"
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "POLÍTICA DE GESTIÓN AMBIENTAL",
+      "archivo": "secciones/07-politica-de-gestion-ambiental.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "7.1. Declaración de la Política",
+          "ancla": "7-1-declaracion-de-la-politica"
+        },
+        {
+          "titulo": "7.2. Vigencia, difusión y control",
+          "ancla": "7-2-vigencia-difusion-y-control"
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "titulo": "IDENTIFICACIÓN Y EVALUACIÓN DE ASPECTOS E IMPACTOS AMBIENTALES",
+      "archivo": "secciones/08-identificacion-y-evaluacion-de-aspectos-e-impact.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "8.1. Metodología y criterios de significancia",
+          "ancla": "8-1-metodologia-y-criterios-de-significancia"
+        },
+        {
+          "titulo": "8.2. Aspectos ambientales significativos por sede y proceso",
+          "ancla": "8-2-aspectos-ambientales-significativos-por-sede"
+        }
+      ]
+    },
+    {
+      "numero": "9",
+      "titulo": "OBJETIVOS, METAS E INDICADORES AMBIENTALES",
+      "archivo": "secciones/09-objetivos-metas-e-indicadores-ambientales.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "9.1. Criterios de formulación",
+          "ancla": "9-1-criterios-de-formulacion"
+        },
+        {
+          "titulo": "9.2. Objetivos y metas del periodo",
+          "ancla": "9-2-objetivos-y-metas-del-periodo"
+        },
+        {
+          "titulo": "9.3. Indicadores ambientales",
+          "ancla": "9-3-indicadores-ambientales"
+        },
+        {
+          "titulo": "9.4. Criterios de evaluación y niveles de alerta",
+          "ancla": "9-4-criterios-de-evaluacion-y-niveles-de-alerta"
+        }
+      ]
+    },
+    {
+      "numero": "10",
+      "titulo": "ORGANIZACIÓN, FUNCIONES Y RESPONSABILIDADES",
+      "archivo": "secciones/10-organizacion-funciones-y-responsabilidades.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "10.1. Gerencia General",
+          "ancla": "10-1-gerencia-general"
+        },
+        {
+          "titulo": "10.2. Gerencias y jefaturas de área",
+          "ancla": "10-2-gerencias-y-jefaturas-de-area"
+        },
+        {
+          "titulo": "10.3. Responsable de Gestión Ambiental",
+          "ancla": "10-3-responsable-de-gestion-ambiental"
+        },
+        {
+          "titulo": "10.4. Responsable de Seguridad y Salud en el Trabajo",
+          "ancla": "10-4-responsable-de-seguridad-y-salud-en-el-trab"
+        },
+        {
+          "titulo": "10.5. Jefatura de Servicios y jefaturas de taller",
+          "ancla": "10-5-jefatura-de-servicios-y-jefaturas-de-taller"
+        },
+        {
+          "titulo": "10.6. Jefatura de Logística y Almacén",
+          "ancla": "10-6-jefatura-de-logistica-y-almacen"
+        },
+        {
+          "titulo": "10.7. Trabajadores",
+          "ancla": "10-7-trabajadores"
+        },
+        {
+          "titulo": "10.8. Contratistas, subcontratistas y proveedores",
+          "ancla": "10-8-contratistas-subcontratistas-y-proveedores"
+        }
+      ]
+    },
+    {
+      "numero": "11",
+      "titulo": "CONTROLES OPERACIONALES",
+      "archivo": "secciones/11-controles-operacionales.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "11.1. Gestión integral de residuos sólidos",
+          "ancla": "11-1-gestion-integral-de-residuos-solidos"
+        },
+        {
+          "titulo": "11.2. Manejo de sustancias químicas peligrosas",
+          "ancla": "11-2-manejo-de-sustancias-quimicas-peligrosas"
+        },
+        {
+          "titulo": "11.3. Gestión de efluentes",
+          "ancla": "11-3-gestion-de-efluentes"
+        },
+        {
+          "titulo": "11.4. Gestión de emisiones atmosféricas y ruido",
+          "ancla": "11-4-gestion-de-emisiones-atmosfericas-y-ruido"
+        },
+        {
+          "titulo": "11.5. Uso eficiente del agua y de la energía",
+          "ancla": "11-5-uso-eficiente-del-agua-y-de-la-energia"
+        },
+        {
+          "titulo": "11.6. Buenas prácticas ambientales",
+          "ancla": "11-6-buenas-practicas-ambientales"
+        }
+      ]
+    },
+    {
+      "numero": "12",
+      "titulo": "PROGRAMA ANUAL DE MANEJO AMBIENTAL",
+      "archivo": "secciones/12-programa-anual-de-manejo-ambiental.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "13",
+      "titulo": "PROGRAMA DE CAPACITACIÓN Y SENSIBILIZACIÓN AMBIENTAL",
+      "archivo": "secciones/13-programa-de-capacitacion-y-sensibilizacion-ambie.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "14",
+      "titulo": "MONITOREOS AMBIENTALES",
+      "archivo": "secciones/14-monitoreos-ambientales.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "14.1. Criterios generales",
+          "ancla": "14-1-criterios-generales"
+        },
+        {
+          "titulo": "14.2. Componentes objeto de monitoreo",
+          "ancla": "14-2-componentes-objeto-de-monitoreo"
+        },
+        {
+          "titulo": "14.3. Programa de monitoreos del periodo",
+          "ancla": "14-3-programa-de-monitoreos-del-periodo"
+        },
+        {
+          "titulo": "14.4. Tratamiento de resultados",
+          "ancla": "14-4-tratamiento-de-resultados"
+        }
+      ]
+    },
+    {
+      "numero": "15",
+      "titulo": "INSPECCIONES AMBIENTALES",
+      "archivo": "secciones/15-inspecciones-ambientales.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "15.1. Tipos de inspección",
+          "ancla": "15-1-tipos-de-inspeccion"
+        },
+        {
+          "titulo": "15.2. Aspectos a verificar",
+          "ancla": "15-2-aspectos-a-verificar"
+        },
+        {
+          "titulo": "15.3. Tratamiento de hallazgos",
+          "ancla": "15-3-tratamiento-de-hallazgos"
+        }
+      ]
+    },
+    {
+      "numero": "16",
+      "titulo": "PREPARACIÓN Y RESPUESTA ANTE EMERGENCIAS AMBIENTALES",
+      "archivo": "secciones/16-preparacion-y-respuesta-ante-emergencias-ambient.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "16.1. Articulación con los Planes de Emergencia por sede",
+          "ancla": "16-1-articulacion-con-los-planes-de-emergencia-p"
+        },
+        {
+          "titulo": "16.2. Escenarios de emergencia ambiental",
+          "ancla": "16-2-escenarios-de-emergencia-ambiental"
+        },
+        {
+          "titulo": "16.3. Procedimiento de respuesta ante derrames de sustancias químicas peligrosas",
+          "ancla": "16-3-procedimiento-de-respuesta-ante-derrames-de"
+        },
+        {
+          "titulo": "16.4. Recursos de respuesta",
+          "ancla": "16-4-recursos-de-respuesta"
+        },
+        {
+          "titulo": "16.5. Entrenamiento",
+          "ancla": "16-5-entrenamiento"
+        }
+      ]
+    },
+    {
+      "numero": "17",
+      "titulo": "EVALUACIÓN DEL CUMPLIMIENTO LEGAL Y AUDITORÍAS",
+      "archivo": "secciones/17-evaluacion-del-cumplimiento-legal-y-auditorias.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "17.1. Matriz de requisitos legales ambientales",
+          "ancla": "17-1-matriz-de-requisitos-legales-ambientales"
+        },
+        {
+          "titulo": "17.2. Auditoría interna",
+          "ancla": "17-2-auditoria-interna"
+        },
+        {
+          "titulo": "17.3. Auditoría externa",
+          "ancla": "17-3-auditoria-externa"
+        },
+        {
+          "titulo": "17.4. Seguimiento de resultados",
+          "ancla": "17-4-seguimiento-de-resultados"
+        }
+      ]
+    },
+    {
+      "numero": "18",
+      "titulo": "NO CONFORMIDADES, ACCIONES CORRECTIVAS Y MEJORA CONTINUA",
+      "archivo": "secciones/18-no-conformidades-acciones-correctivas-y-mejora-c.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "18.1. Fuentes de no conformidades y oportunidades de mejora",
+          "ancla": "18-1-fuentes-de-no-conformidades-y-oportunidades"
+        },
+        {
+          "titulo": "18.2. Gestión de la acción correctiva",
+          "ancla": "18-2-gestion-de-la-accion-correctiva"
+        },
+        {
+          "titulo": "18.3. Mejora continua",
+          "ancla": "18-3-mejora-continua"
+        }
+      ]
+    },
+    {
+      "numero": "19",
+      "titulo": "REVISIÓN POR LA DIRECCIÓN",
+      "archivo": "secciones/19-revision-por-la-direccion.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "20",
+      "titulo": "PRESUPUESTO ANUAL DE GESTIÓN AMBIENTAL",
+      "archivo": "secciones/20-presupuesto-anual-de-gestion-ambiental.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "21",
+      "titulo": "CONTROL DE DOCUMENTOS Y REGISTROS",
+      "archivo": "secciones/21-control-de-documentos-y-registros.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "21.1. Control de documentos",
+          "ancla": "21-1-control-de-documentos"
+        },
+        {
+          "titulo": "21.2. Registros del Sistema de Gestión Ambiental",
+          "ancla": "21-2-registros-del-sistema-de-gestion-ambiental"
+        },
+        {
+          "titulo": "21.3. Conservación",
+          "ancla": "21-3-conservacion"
+        }
+      ]
+    },
+    {
+      "numero": "22",
+      "titulo": "CONTROL DE CAMBIOS",
+      "archivo": "secciones/22-control-de-cambios.html",
+      "vacia": false,
+      "subsecciones": []
+    }
+  ]
+}

@@ -1,1 +1,461 @@
-{"id":"sst","titulo":"Plan Anual de Seguridad y Salud en el Trabajo","titulo_corto":"Plan de SST","descripcion":"Prevención de accidentes de trabajo, incidentes peligrosos y enfermedades ocupacionales.","codigo":"FM-SST-PL-001","version":"03","periodo":2027,"secciones":[{"numero":"1","titulo":"INTRODUCCIÓN","archivo":"secciones/01-introduccion.html","vacia":false,"subsecciones":[]},{"numero":"2","titulo":"OBJETIVO Y ALCANCE DEL PLAN","archivo":"secciones/02-objetivo-y-alcance-del-plan.html","vacia":false,"subsecciones":[]},{"numero":"3","titulo":"MARCO LEGAL Y DOCUMENTOS DE REFERENCIA","archivo":"secciones/03-marco-legal-y-documentos-de-referencia.html","vacia":false,"subsecciones":[]},{"numero":"4","titulo":"CARACTERIZACIÓN DE FORCEMOVIL S.A.C.","archivo":"secciones/04-caracterizacion-de-forcemovil-s-a-c.html","vacia":false,"subsecciones":[]},{"numero":"5","titulo":"DIAGNÓSTICO DE LA GESTIÓN DE SST","archivo":"secciones/05-diagnostico-de-la-gestion-de-sst.html","vacia":false,"subsecciones":[]},{"numero":"6","titulo":"POLÍTICA DE SEGURIDAD Y SALUD EN EL TRABAJO","archivo":"secciones/06-politica-de-seguridad-y-salud-en-el-trabajo.html","vacia":false,"subsecciones":[]},{"numero":"7","titulo":"IDENTIFICACIÓN DE PELIGROS, EVALUACIÓN DE RIESGOS Y CONTROLES","archivo":"secciones/07-identificacion-de-peligros-evaluacion-de-riesgos.html","vacia":false,"subsecciones":[]},{"numero":"8","titulo":"OBJETIVOS, METAS E INDICADORES","archivo":"secciones/08-objetivos-metas-e-indicadores.html","vacia":false,"subsecciones":[]},{"numero":"9","titulo":"ORGANIZACIÓN, RESPONSABILIDADES Y LIDERAZGO EN SST","archivo":"secciones/09-organizacion-responsabilidades-y-liderazgo-en-ss.html","vacia":false,"subsecciones":[]},{"numero":"10","titulo":"PARTICIPACIÓN, CONSULTA Y COMUNICACIÓN","archivo":"secciones/10-participacion-consulta-y-comunicacion.html","vacia":false,"subsecciones":[]},{"numero":"11","titulo":"PROGRAMAS ANUALES DE SEGURIDAD Y SALUD EN EL TRABAJO","archivo":"secciones/11-programas-anuales-de-seguridad-y-salud-en-el-tra.html","vacia":false,"subsecciones":[]},{"numero":"12","titulo":"GESTIÓN DE CONTRATISTAS, PROVEEDORES Y TERCEROS","archivo":"secciones/12-gestion-de-contratistas-proveedores-y-terceros.html","vacia":false,"subsecciones":[]},{"numero":"13","titulo":"INVESTIGACIÓN DE INCIDENTES, ACCIDENTES Y ENFERMEDADES OCUPACIONALES","archivo":"secciones/13-investigacion-de-incidentes-accidentes-y-enferme.html","vacia":false,"subsecciones":[]},{"numero":"14","titulo":"SISTEMA DE INDICADORES Y EVALUACIÓN DEL DESEMPEÑO","archivo":"secciones/14-sistema-de-indicadores-y-evaluacion-del-desempen.html","vacia":false,"subsecciones":[]},{"numero":"15","titulo":"CUMPLIMIENTO LEGAL Y AUDITORÍAS","archivo":"secciones/15-cumplimiento-legal-y-auditorias.html","vacia":false,"subsecciones":[]},{"numero":"16","titulo":"PRESUPUESTO ANUAL DE SST","archivo":"secciones/16-presupuesto-anual-de-sst.html","vacia":false,"subsecciones":[]},{"numero":"17","titulo":"MEJORA CONTINUA Y REVISIÓN POR LA DIRECCIÓN","archivo":"secciones/17-mejora-continua-y-revision-por-la-direccion.html","vacia":false,"subsecciones":[]},{"numero":"18","titulo":"CONTROL DE DOCUMENTOS Y MANTENIMIENTO DE REGISTROS","archivo":"secciones/18-control-de-documentos-y-mantenimiento-de-registr.html","vacia":false,"subsecciones":[]}]}
+{
+  "id": "sst",
+  "titulo": "Plan Anual de Seguridad y Salud en el Trabajo",
+  "titulo_corto": "Plan de SST",
+  "descripcion": "Prevención de accidentes de trabajo, incidentes peligrosos y enfermedades ocupacionales.",
+  "codigo": "FM-SST-PL-001",
+  "version": "03",
+  "periodo": 2027,
+  "secciones": [
+    {
+      "numero": "1",
+      "titulo": "INTRODUCCIÓN",
+      "archivo": "secciones/01-introduccion.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "2",
+      "titulo": "OBJETIVO Y ALCANCE DEL PLAN",
+      "archivo": "secciones/02-objetivo-y-alcance-del-plan.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "2.1. Objetivo del Plan",
+          "ancla": "2-1-objetivo-del-plan"
+        },
+        {
+          "titulo": "2.2. Alcance",
+          "ancla": "2-2-alcance"
+        },
+        {
+          "titulo": "2.3. Alcance geográfico y operativo",
+          "ancla": "2-3-alcance-geografico-y-operativo"
+        },
+        {
+          "titulo": "2.4. Exclusiones",
+          "ancla": "2-4-exclusiones"
+        }
+      ]
+    },
+    {
+      "numero": "3",
+      "titulo": "MARCO LEGAL Y DOCUMENTOS DE REFERENCIA",
+      "archivo": "secciones/03-marco-legal-y-documentos-de-referencia.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "3.1. Criterio de construcción del marco legal",
+          "ancla": "3-1-criterio-de-construccion-del-marco-legal"
+        },
+        {
+          "titulo": "3.2. Normativa de seguridad y salud en el trabajo — obligaciones legales",
+          "ancla": "3-2-normativa-de-seguridad-y-salud-en-el-trabajo"
+        },
+        {
+          "titulo": "3.3. Documentos técnicos y guías referenciales",
+          "ancla": "3-3-documentos-tecnicos-y-guias-referenciales"
+        },
+        {
+          "titulo": "3.4. Normas técnicas de adopción voluntaria",
+          "ancla": "3-4-normas-tecnicas-de-adopcion-voluntaria"
+        },
+        {
+          "titulo": "3.5. Documentos internos de referencia",
+          "ancla": "3-5-documentos-internos-de-referencia"
+        }
+      ]
+    },
+    {
+      "numero": "4",
+      "titulo": "CARACTERIZACIÓN DE FORCEMOVIL S.A.C.",
+      "archivo": "secciones/04-caracterizacion-de-forcemovil-s-a-c.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "4.1. Descripción de la organización",
+          "ancla": "4-1-descripcion-de-la-organizacion"
+        },
+        {
+          "titulo": "4.2. Estructura de áreas y subáreas",
+          "ancla": "4-2-estructura-de-areas-y-subareas"
+        },
+        {
+          "titulo": "4.3. Procesos y actividades por subárea",
+          "ancla": "4-3-procesos-y-actividades-por-subarea"
+        },
+        {
+          "titulo": "4.4. Grupos de exposición similar (GES)",
+          "ancla": "4-4-grupos-de-exposicion-similar-ges"
+        }
+      ]
+    },
+    {
+      "numero": "5",
+      "titulo": "DIAGNÓSTICO DE LA GESTIÓN DE SST",
+      "archivo": "secciones/05-diagnostico-de-la-gestion-de-sst.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "5.1. Línea base del SG-SST",
+          "ancla": "5-1-linea-base-del-sg-sst"
+        },
+        {
+          "titulo": "5.2. Estadísticas de accidentabilidad del periodo anterior",
+          "ancla": "5-2-estadisticas-de-accidentabilidad-del-periodo"
+        },
+        {
+          "titulo": "5.3. Resultados de inspecciones, observaciones y hallazgos",
+          "ancla": "5-3-resultados-de-inspecciones-observaciones-y-h"
+        },
+        {
+          "titulo": "5.4. Cumplimiento del Programa Anual del periodo anterior",
+          "ancla": "5-4-cumplimiento-del-programa-anual-del-periodo"
+        },
+        {
+          "titulo": "5.5. Salud ocupacional y ausentismo",
+          "ancla": "5-5-salud-ocupacional-y-ausentismo"
+        },
+        {
+          "titulo": "5.6. Brechas identificadas y lineamientos para el periodo",
+          "ancla": "5-6-brechas-identificadas-y-lineamientos-para-el"
+        }
+      ]
+    },
+    {
+      "numero": "6",
+      "titulo": "POLÍTICA DE SEGURIDAD Y SALUD EN EL TRABAJO",
+      "archivo": "secciones/06-politica-de-seguridad-y-salud-en-el-trabajo.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "6.1. Declaración de la Política",
+          "ancla": "6-1-declaracion-de-la-politica"
+        },
+        {
+          "titulo": "6.2. Vigencia, difusión y control",
+          "ancla": "6-2-vigencia-difusion-y-control"
+        }
+      ]
+    },
+    {
+      "numero": "7",
+      "titulo": "IDENTIFICACIÓN DE PELIGROS, EVALUACIÓN DE RIESGOS Y CONTROLES",
+      "archivo": "secciones/07-identificacion-de-peligros-evaluacion-de-riesgos.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "7.1. Metodología IPERC",
+          "ancla": "7-1-metodologia-iperc"
+        },
+        {
+          "titulo": "7.2. Riesgos prioritarios por área y subárea",
+          "ancla": "7-2-riesgos-prioritarios-por-area-y-subarea"
+        },
+        {
+          "titulo": "7.3. Mapa de riesgos",
+          "ancla": "7-3-mapa-de-riesgos"
+        },
+        {
+          "titulo": "7.4. Controles operacionales y procedimientos aplicables",
+          "ancla": "7-4-controles-operacionales-y-procedimientos-apl"
+        }
+      ]
+    },
+    {
+      "numero": "8",
+      "titulo": "OBJETIVOS, METAS E INDICADORES",
+      "archivo": "secciones/08-objetivos-metas-e-indicadores.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "8.1. Objetivos generales y específicos",
+          "ancla": "8-1-objetivos-generales-y-especificos"
+        },
+        {
+          "titulo": "8.2. Metas del periodo",
+          "ancla": "8-2-metas-del-periodo"
+        },
+        {
+          "titulo": "8.3. Alineamiento política – objetivo – meta – indicador – programa",
+          "ancla": "8-3-alineamiento-politica-objetivo-meta-indicado"
+        }
+      ]
+    },
+    {
+      "numero": "9",
+      "titulo": "ORGANIZACIÓN, RESPONSABILIDADES Y LIDERAZGO EN SST",
+      "archivo": "secciones/09-organizacion-responsabilidades-y-liderazgo-en-ss.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "9.1. Responsabilidades por nivel jerárquico",
+          "ancla": "9-1-responsabilidades-por-nivel-jerarquico"
+        },
+        {
+          "titulo": "9.2. Comité de Seguridad y Salud en el Trabajo",
+          "ancla": "9-2-comite-de-seguridad-y-salud-en-el-trabajo"
+        },
+        {
+          "titulo": "9.3. Reglamento Interno de Seguridad y Salud en el Trabajo",
+          "ancla": "9-3-reglamento-interno-de-seguridad-y-salud-en-e"
+        },
+        {
+          "titulo": "9.4. Liderazgo visible de la línea de mando",
+          "ancla": "9-4-liderazgo-visible-de-la-linea-de-mando"
+        },
+        {
+          "titulo": "9.5. Recursos asignados a la gestión de SST",
+          "ancla": "9-5-recursos-asignados-a-la-gestion-de-sst"
+        }
+      ]
+    },
+    {
+      "numero": "10",
+      "titulo": "PARTICIPACIÓN, CONSULTA Y COMUNICACIÓN",
+      "archivo": "secciones/10-participacion-consulta-y-comunicacion.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "10.1. Participación y consulta de los trabajadores",
+          "ancla": "10-1-participacion-y-consulta-de-los-trabajadore"
+        },
+        {
+          "titulo": "10.2. Matriz y cronograma de comunicación",
+          "ancla": "10-2-matriz-y-cronograma-de-comunicacion"
+        },
+        {
+          "titulo": "10.3. Reporte de actos y condiciones inseguras",
+          "ancla": "10-3-reporte-de-actos-y-condiciones-inseguras"
+        }
+      ]
+    },
+    {
+      "numero": "11",
+      "titulo": "PROGRAMAS ANUALES DE SEGURIDAD Y SALUD EN EL TRABAJO",
+      "archivo": "secciones/11-programas-anuales-de-seguridad-y-salud-en-el-tra.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "11.0. Articulación entre los programas",
+          "ancla": "11-0-articulacion-entre-los-programas"
+        },
+        {
+          "titulo": "11.1. Programa Anual de Seguridad y Salud en el Trabajo",
+          "ancla": "11-1-programa-anual-de-seguridad-y-salud-en-el-t"
+        },
+        {
+          "titulo": "11.2. Programa Anual de Capacitación en SST",
+          "ancla": "11-2-programa-anual-de-capacitacion-en-sst"
+        },
+        {
+          "titulo": "11.3. Programa Anual de Preparación y Respuesta ante Emergencias",
+          "ancla": "11-3-programa-anual-de-preparacion-y-respuesta-a"
+        },
+        {
+          "titulo": "11.4. Programa Anual de Salud Ocupacional",
+          "ancla": "11-4-programa-anual-de-salud-ocupacional"
+        },
+        {
+          "titulo": "11.5. Programa Anual de Inspecciones y Observaciones Preventivas",
+          "ancla": "11-5-programa-anual-de-inspecciones-y-observacio"
+        },
+        {
+          "titulo": "11.6. Programa Anual de Monitoreos de Higiene Ocupacional",
+          "ancla": "11-6-programa-anual-de-monitoreos-de-higiene-ocu"
+        },
+        {
+          "titulo": "11.7. Cronograma general y articulación entre programas",
+          "ancla": "11-7-cronograma-general-y-articulacion-entre-pro"
+        }
+      ]
+    },
+    {
+      "numero": "12",
+      "titulo": "GESTIÓN DE CONTRATISTAS, PROVEEDORES Y TERCEROS",
+      "archivo": "secciones/12-gestion-de-contratistas-proveedores-y-terceros.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "12.1. Fundamento y alcance",
+          "ancla": "12-1-fundamento-y-alcance"
+        },
+        {
+          "titulo": "12.2. Criterio rector para actividades de modalidad mixta",
+          "ancla": "12-2-criterio-rector-para-actividades-de-modalid"
+        },
+        {
+          "titulo": "12.3. Homologación y requisitos de ingreso",
+          "ancla": "12-3-homologacion-y-requisitos-de-ingreso"
+        },
+        {
+          "titulo": "12.4. Inducción y control operacional",
+          "ancla": "12-4-induccion-y-control-operacional"
+        },
+        {
+          "titulo": "12.5. Evaluación de desempeño y consecuencias",
+          "ancla": "12-5-evaluacion-de-desempeno-y-consecuencias"
+        },
+        {
+          "titulo": "12.6. Gestión de incidentes de contratistas",
+          "ancla": "12-6-gestion-de-incidentes-de-contratistas"
+        }
+      ]
+    },
+    {
+      "numero": "13",
+      "titulo": "INVESTIGACIÓN DE INCIDENTES, ACCIDENTES Y ENFERMEDADES OCUPACIONALES",
+      "archivo": "secciones/13-investigacion-de-incidentes-accidentes-y-enferme.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "13.1. Finalidad",
+          "ancla": "13-1-finalidad"
+        },
+        {
+          "titulo": "13.2. Alcance",
+          "ancla": "13-2-alcance"
+        },
+        {
+          "titulo": "13.3. Niveles de causalidad",
+          "ancla": "13-3-niveles-de-causalidad"
+        },
+        {
+          "titulo": "13.4. Reporte y notificación",
+          "ancla": "13-4-reporte-y-notificacion"
+        },
+        {
+          "titulo": "13.5. Acciones posteriores",
+          "ancla": "13-5-acciones-posteriores"
+        },
+        {
+          "titulo": "13.6. Registro",
+          "ancla": "13-6-registro"
+        }
+      ]
+    },
+    {
+      "numero": "14",
+      "titulo": "SISTEMA DE INDICADORES Y EVALUACIÓN DEL DESEMPEÑO",
+      "archivo": "secciones/14-sistema-de-indicadores-y-evaluacion-del-desempen.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "14.1. Estructura general del sistema de indicadores",
+          "ancla": "14-1-estructura-general-del-sistema-de-indicador"
+        },
+        {
+          "titulo": "14.2. Indicadores de resultado",
+          "ancla": "14-2-indicadores-de-resultado"
+        },
+        {
+          "titulo": "14.3. Indicadores preventivos",
+          "ancla": "14-3-indicadores-preventivos"
+        },
+        {
+          "titulo": "14.4. Indicadores de capacitación",
+          "ancla": "14-4-indicadores-de-capacitacion"
+        },
+        {
+          "titulo": "14.5. Indicadores de preparación y respuesta ante emergencias",
+          "ancla": "14-5-indicadores-de-preparacion-y-respuesta-ante"
+        },
+        {
+          "titulo": "14.6. Indicadores de liderazgo y participación",
+          "ancla": "14-6-indicadores-de-liderazgo-y-participacion"
+        },
+        {
+          "titulo": "14.7. Indicadores de gestión del sistema",
+          "ancla": "14-7-indicadores-de-gestion-del-sistema"
+        },
+        {
+          "titulo": "14.8. Metas, criterios de evaluación y niveles de alerta",
+          "ancla": "14-8-metas-criterios-de-evaluacion-y-niveles-de"
+        },
+        {
+          "titulo": "14.9. Herramienta computacional para el procesamiento y análisis de indicadores SST",
+          "ancla": "14-9-herramienta-computacional-para-el-procesami"
+        },
+        {
+          "titulo": "14.10. Seguimiento mensual, análisis de tendencias y reporte al CSST",
+          "ancla": "14-10-seguimiento-mensual-analisis-de-tendencias"
+        }
+      ]
+    },
+    {
+      "numero": "15",
+      "titulo": "CUMPLIMIENTO LEGAL Y AUDITORÍAS",
+      "archivo": "secciones/15-cumplimiento-legal-y-auditorias.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "15.1. Evaluación del cumplimiento legal",
+          "ancla": "15-1-evaluacion-del-cumplimiento-legal"
+        },
+        {
+          "titulo": "15.2. Auditoría interna",
+          "ancla": "15-2-auditoria-interna"
+        },
+        {
+          "titulo": "15.3. Auditoría externa",
+          "ancla": "15-3-auditoria-externa"
+        },
+        {
+          "titulo": "15.4. Seguimiento de resultados",
+          "ancla": "15-4-seguimiento-de-resultados"
+        }
+      ]
+    },
+    {
+      "numero": "16",
+      "titulo": "PRESUPUESTO ANUAL DE SST",
+      "archivo": "secciones/16-presupuesto-anual-de-sst.html",
+      "vacia": false,
+      "subsecciones": []
+    },
+    {
+      "numero": "17",
+      "titulo": "MEJORA CONTINUA Y REVISIÓN POR LA DIRECCIÓN",
+      "archivo": "secciones/17-mejora-continua-y-revision-por-la-direccion.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "17.1. Acciones correctivas, preventivas y oportunidades de mejora",
+          "ancla": "17-1-acciones-correctivas-preventivas-y-oportuni"
+        },
+        {
+          "titulo": "17.2. Evaluación de eficacia",
+          "ancla": "17-2-evaluacion-de-eficacia"
+        },
+        {
+          "titulo": "17.3. Revisión por la Dirección",
+          "ancla": "17-3-revision-por-la-direccion"
+        }
+      ]
+    },
+    {
+      "numero": "18",
+      "titulo": "CONTROL DE DOCUMENTOS Y MANTENIMIENTO DE REGISTROS",
+      "archivo": "secciones/18-control-de-documentos-y-mantenimiento-de-registr.html",
+      "vacia": false,
+      "subsecciones": [
+        {
+          "titulo": "18.1. Control de documentos",
+          "ancla": "18-1-control-de-documentos"
+        },
+        {
+          "titulo": "18.2. Control de cambios",
+          "ancla": "18-2-control-de-cambios"
+        },
+        {
+          "titulo": "18.3. Registros obligatorios",
+          "ancla": "18-3-registros-obligatorios"
+        },
+        {
+          "titulo": "18.4. Plazos de conservación",
+          "ancla": "18-4-plazos-de-conservacion"
+        }
+      ]
+    }
+  ]
+}

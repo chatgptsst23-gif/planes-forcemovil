@@ -1,0 +1,46 @@
+[
+  {
+    "numero": "1",
+    "titulo": "Matriz de identificación y evaluación de aspectos e impactos ambientales"
+  },
+  {
+    "numero": "2",
+    "titulo": "Matriz de requisitos legales ambientales"
+  },
+  {
+    "numero": "3",
+    "titulo": "Programa Anual de Manejo Ambiental"
+  },
+  {
+    "numero": "4",
+    "titulo": "Programa de Capacitación y Sensibilización Ambiental"
+  },
+  {
+    "numero": "5",
+    "titulo": "Programa Anual de Inspecciones Ambientales"
+  },
+  {
+    "numero": "6",
+    "titulo": "Programa Anual de Monitoreos Ambientales"
+  },
+  {
+    "numero": "7",
+    "titulo": "Presupuesto anual de gestión ambiental por centro de costo"
+  },
+  {
+    "numero": "8",
+    "titulo": "Procedimiento de manejo de residuos sólidos"
+  },
+  {
+    "numero": "9",
+    "titulo": "Procedimiento de respuesta ante derrames de sustancias químicas peligrosas"
+  },
+  {
+    "numero": "10",
+    "titulo": "Inventario de sustancias químicas y hojas de datos de seguridad"
+  },
+  {
+    "numero": "11",
+    "titulo": "Ficha técnica de indicadores ambientales"
+  }
+]

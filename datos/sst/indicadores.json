@@ -1,0 +1,236 @@
+[
+  {
+    "grupo": "Indicadores de resultado",
+    "indicador": "Índice de frecuencia de accidentes (IF)",
+    "formula": "IF = N.° de accidentes de trabajo incapacitantes × 1 000 000 ÷ Horas-hombre trabajadas",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de resultado",
+    "indicador": "Índice de severidad de accidentes (IS)",
+    "formula": "IS = N.° de días perdidos por accidente de trabajo × 1 000 000 ÷ Horas-hombre trabajadas",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de resultado",
+    "indicador": "Índice de accidentabilidad (IA)",
+    "formula": "IA = IF × IS ÷ 1 000",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de resultado",
+    "indicador": "Tasa de incidencia de enfermedades ocupacionales",
+    "formula": "TI = N.° de casos nuevos de enfermedad ocupacional en el periodo × 1 000 ÷ N.° promedio de trabajadores expuestos",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de resultado",
+    "indicador": "Tasa de prevalencia de enfermedades ocupacionales",
+    "formula": "TP = N.° total de casos de enfermedad ocupacional existentes × 1 000 ÷ N.° promedio de trabajadores expuestos",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de resultado",
+    "indicador": "Tasa de frecuencia de estados prepatológicos",
+    "formula": "TFP = N.° de casos de estados prepatológicos detectados × 1 000 ÷ N.° promedio de trabajadores expuestos",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de resultado",
+    "indicador": "Índice de ausentismo por causa laboral",
+    "formula": "IAus = N.° de días de ausencia por causa laboral × 100 ÷ N.° de días-hombre programados",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Cumplimiento del Programa Anual de SST",
+    "formula": "(Actividades ejecutadas / Actividades programadas a la fecha) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Cumplimiento del Programa de Inspecciones",
+    "formula": "(Inspecciones ejecutadas / Inspecciones programadas) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Levantamiento de observaciones",
+    "formula": "(Observaciones levantadas en plazo / Observaciones generadas) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Reportes de actos y condiciones inseguras",
+    "formula": "N.° de reportes recibidos en el periodo",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Índice de reporte por trabajador",
+    "formula": "N.° de reportes recibidos / N.° de trabajadores",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Cierre de acciones correctivas",
+    "formula": "(Acciones correctivas cerradas en plazo / Acciones correctivas generadas) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Actualización de matrices IPERC",
+    "formula": "(Matrices IPERC actualizadas / Matrices IPERC requeridas) × 100",
+    "frecuencia": "Semestral"
+  },
+  {
+    "grupo": "Indicadores preventivos",
+    "indicador": "Cumplimiento del Programa de Monitoreos",
+    "formula": "(Monitoreos ejecutados / Monitoreos programados) × 100",
+    "frecuencia": "Semestral"
+  },
+  {
+    "grupo": "Indicadores de capacitación",
+    "indicador": "Cumplimiento del Programa Anual de Capacitación",
+    "formula": "(Capacitaciones ejecutadas / Capacitaciones programadas) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de capacitación",
+    "indicador": "Cobertura de capacitación",
+    "formula": "(Trabajadores capacitados / Trabajadores programados) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de capacitación",
+    "indicador": "Cobertura de inducción al ingreso",
+    "formula": "(Trabajadores inducidos antes del inicio de labores / Trabajadores ingresantes) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de capacitación",
+    "indicador": "Cobertura de inducción a contratistas",
+    "formula": "(Personal de contratistas inducido / Personal de contratistas ingresante) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de capacitación",
+    "indicador": "Horas de capacitación por trabajador",
+    "formula": "Total de horas-hombre de capacitación / N.° de trabajadores",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de capacitación",
+    "indicador": "Eficacia de la capacitación",
+    "formula": "(Participantes que aprueban la evaluación / Participantes evaluados) × 100",
+    "frecuencia": "Por actividad"
+  },
+  {
+    "grupo": "Indicadores de preparación y respuesta ante emergencias",
+    "indicador": "Cumplimiento del programa de simulacros",
+    "formula": "(Simulacros ejecutados / Simulacros programados) × 100",
+    "frecuencia": "Semestral"
+  },
+  {
+    "grupo": "Indicadores de preparación y respuesta ante emergencias",
+    "indicador": "Cobertura de participación en simulacros",
+    "formula": "(Participantes / Población de la sede) × 100",
+    "frecuencia": "Por simulacro"
+  },
+  {
+    "grupo": "Indicadores de preparación y respuesta ante emergencias",
+    "indicador": "Conformación de brigadas",
+    "formula": "(Brigadistas designados y capacitados / Brigadistas requeridos por sede) × 100",
+    "frecuencia": "Semestral"
+  },
+  {
+    "grupo": "Indicadores de preparación y respuesta ante emergencias",
+    "indicador": "Operatividad de equipos de emergencia",
+    "formula": "(Equipos operativos / Equipos inspeccionados) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de preparación y respuesta ante emergencias",
+    "indicador": "Tiempo de evacuación",
+    "formula": "Tiempo registrado frente a tiempo objetivo por sede",
+    "frecuencia": "Por simulacro"
+  },
+  {
+    "grupo": "Indicadores de preparación y respuesta ante emergencias",
+    "indicador": "Levantamiento de observaciones de simulacro",
+    "formula": "(Observaciones levantadas / Observaciones del informe de simulacro) × 100",
+    "frecuencia": "Por simulacro"
+  },
+  {
+    "grupo": "Indicadores de liderazgo y participación",
+    "indicador": "Cumplimiento de inspecciones gerenciales",
+    "formula": "(Inspecciones gerenciales ejecutadas / Programadas) × 100",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de liderazgo y participación",
+    "indicador": "Asistencia a sesiones del CSST",
+    "formula": "(Asistentes / Miembros convocados) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de liderazgo y participación",
+    "indicador": "Cumplimiento de acuerdos del CSST",
+    "formula": "(Acuerdos cerrados en plazo / Acuerdos adoptados) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de liderazgo y participación",
+    "indicador": "Participación de la línea de mando en investigaciones",
+    "formula": "(Investigaciones con participación de la jefatura del área / Total de investigaciones) × 100",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de liderazgo y participación",
+    "indicador": "Realización de charlas de inicio de jornada",
+    "formula": "(Charlas ejecutadas / Charlas programadas) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de gestión del sistema",
+    "indicador": "Cumplimiento legal",
+    "formula": "(Requisitos legales cumplidos / Requisitos legales aplicables identificados) × 100",
+    "frecuencia": "Semestral"
+  },
+  {
+    "grupo": "Indicadores de gestión del sistema",
+    "indicador": "Cobertura de exámenes médicos ocupacionales",
+    "formula": "(EMO ejecutados / EMO programados) × 100",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de gestión del sistema",
+    "indicador": "Cumplimiento del programa de auditorías",
+    "formula": "(Auditorías ejecutadas / Auditorías programadas) × 100",
+    "frecuencia": "Anual"
+  },
+  {
+    "grupo": "Indicadores de gestión del sistema",
+    "indicador": "Cierre de no conformidades de auditoría",
+    "formula": "(No conformidades cerradas / No conformidades detectadas) × 100",
+    "frecuencia": "Semestral"
+  },
+  {
+    "grupo": "Indicadores de gestión del sistema",
+    "indicador": "Ejecución presupuestal de SST",
+    "formula": "(Presupuesto ejecutado / Presupuesto asignado) × 100",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de gestión del sistema",
+    "indicador": "Homologación de contratistas",
+    "formula": "(Contratistas homologados / Contratistas activos) × 100",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de gestión del sistema",
+    "indicador": "Vigencia documentaria",
+    "formula": "(Documentos del SG-SST vigentes / Documentos que requieren revisión) × 100",
+    "frecuencia": "Anual"
+  }
+]
