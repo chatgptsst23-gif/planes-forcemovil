@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planes de Gestión — FORCEMOVIL S.A.C.</title>
+<meta name="description" content="Consulta del Plan Anual de Seguridad y Salud en el Trabajo y del Plan Anual de Gestión Ambiental de FORCEMOVIL S.A.C.">
+<link rel="stylesheet" href="assets/css/estilos.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="cabecera-inner">
+    <button class="btn-menu" id="btnMenu" aria-label="Mostrar u ocultar el índice" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="marca" href="#/" id="marca">
+      <span class="marca-logo" aria-hidden="true">FM</span>
+      <span class="marca-txt">
+        <strong id="marcaRazon">FORCEMOVIL S.A.C.</strong>
+        <small id="marcaSub">Planes de gestión</small>
+      </span>
+    </a>
+    <nav class="nav-plan" id="navPlan" hidden>
+      <a href="#" data-vista="secciones" class="activo">Secciones</a>
+      <a href="#" data-vista="politica">Política</a>
+      <a href="#" data-vista="indicadores">Indicadores</a>
+      <a href="#" data-vista="anexos">Anexos</a>
+    </nav>
+    <div class="buscador" id="buscador" hidden>
+      <input type="search" id="inputBuscar" placeholder="Buscar en el plan…" aria-label="Buscar en el plan">
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="lateral" id="lateral" aria-label="Índice del plan">
+    <div class="lateral-cabecera">
+      <p class="lateral-titulo" id="lateralTitulo"></p>
+      <p class="lateral-meta" id="lateralMeta"></p>
+    </div>
+    <nav id="indiceNav" class="indice"></nav>
+    <div class="lateral-pie">
+      <a href="#/" class="volver">← Elegir otro plan</a>
+    </div>
+  </aside>
+
+  <main class="principal" id="principal" tabindex="-1">
+
+    <!-- Portada: selección de plan -->
+    <section class="vista" id="vistaInicio">
+      <div class="portada">
+        <p class="portada-eyebrow" id="portadaEmpresa">FORCEMOVIL S.A.C.</p>
+        <h1>Planes de gestión</h1>
+        <p class="portada-bajada">Seleccione el plan que desea consultar.</p>
+        <div class="tarjetas" id="tarjetasPlanes"></div>
+        <div class="ficha-empresa" id="fichaEmpresa"></div>
+      </div>
+    </section>
+
+    <!-- Contenido del plan -->
+    <section class="vista" id="vistaPlan" hidden>
+      <div class="migas" id="migas"></div>
+      <article class="contenido" id="contenido"></article>
+      <nav class="paginacion" id="paginacion"></nav>
+    </section>
+
+  </main>
+</div>
+
+<footer class="pie">
+  <p id="piePlan"></p>
+  <p class="pie-nota">Documento de gestión interna. Los numerales sin contenido se completan en la etapa correspondiente del plan.</p>
+</footer>
+
+<div class="aviso-carga" id="avisoCarga" hidden>
+  <div class="aviso-caja">
+    <h2>No se pudieron cargar los datos</h2>
+    <p id="avisoDetalle"></p>
+    <p>Este sitio lee su contenido desde archivos externos, por lo que necesita ejecutarse a través de un servidor web. Abrirlo con doble clic sobre <code>index.html</code> no funciona por restricciones de seguridad del navegador.</p>
+    <p><strong>Para verlo en su computadora</strong>, abra una terminal en la carpeta del proyecto y ejecute:</p>
+    <pre>python3 servir.py</pre>
+    <p>Luego abra <code>http://localhost:8000</code> en el navegador.</p>
+    <p><strong>En GitHub Pages</strong> funciona directamente, sin ningún paso adicional.</p>
+  </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

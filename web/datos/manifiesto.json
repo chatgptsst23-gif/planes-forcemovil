@@ -1,0 +1,78 @@
+{
+  "organizacion": {
+    "razon_social": "FORCEMOVIL S.A.C.",
+    "giro": "Comercialización y mantenimiento de vehículos y motocicletas",
+    "sedes": [
+      {
+        "id": "SI",
+        "nombre": "San Isidro",
+        "principal": true,
+        "direccion": "Av. República de Panamá 3321, San Isidro",
+        "lineas": [
+          "Autos"
+        ],
+        "trabajadores": 83,
+        "planchado_pintura": "Mixto (propio y contratista)"
+      },
+      {
+        "id": "SM",
+        "nombre": "San Miguel",
+        "principal": false,
+        "direccion": "Av. La Marina 3241, San Miguel",
+        "lineas": [
+          "Autos",
+          "Motos"
+        ],
+        "trabajadores": 41,
+        "planchado_pintura": "No aplica"
+      },
+      {
+        "id": "S1",
+        "nombre": "Surquillo 1",
+        "principal": false,
+        "direccion": "Av. República de Panamá 5566, Surquillo",
+        "lineas": [
+          "Motos"
+        ],
+        "trabajadores": 15,
+        "planchado_pintura": "No aplica"
+      },
+      {
+        "id": "S3",
+        "nombre": "Surquillo 3",
+        "principal": false,
+        "direccion": "Av. Domingo Orué 784, Surquillo",
+        "lineas": [
+          "Motos"
+        ],
+        "trabajadores": 10,
+        "planchado_pintura": "No aplica"
+      }
+    ],
+    "total_trabajadores": 149
+  },
+  "planes": [
+    {
+      "id": "sst",
+      "titulo": "Plan Anual de Seguridad y Salud en el Trabajo",
+      "titulo_corto": "Plan de SST",
+      "descripcion": "Prevención de accidentes de trabajo, incidentes peligrosos y enfermedades ocupacionales.",
+      "codigo": "FM-SST-PL-001",
+      "version": "03",
+      "periodo": 2027,
+      "color": "sst",
+      "n_secciones": 18
+    },
+    {
+      "id": "ma",
+      "titulo": "Plan Anual de Gestión Ambiental",
+      "titulo_corto": "Plan de Medio Ambiente",
+      "descripcion": "Prevención, control y mitigación de los impactos ambientales de la operación.",
+      "codigo": "FM-MA-PL-001",
+      "version": "01",
+      "periodo": 2027,
+      "color": "ma",
+      "n_secciones": 22
+    }
+  ]
+}

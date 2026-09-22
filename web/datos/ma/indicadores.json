@@ -1,0 +1,128 @@
+[
+  {
+    "grupo": "Indicadores de gestión de residuos",
+    "indicador": "Generación total de residuos",
+    "formula": "Toneladas de residuos generados en el periodo",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de gestión de residuos",
+    "indicador": "Generación de residuos peligrosos",
+    "formula": "Toneladas de residuos peligrosos generados en el periodo",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de gestión de residuos",
+    "indicador": "Proporción de residuos peligrosos",
+    "formula": "(Residuos peligrosos / Residuos totales) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de gestión de residuos",
+    "indicador": "Tasa de valorización",
+    "formula": "(Residuos valorizados / Residuos totales) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de gestión de residuos",
+    "indicador": "Disposición a través de EO-RS autorizada",
+    "formula": "(Residuos dispuestos con manifiesto / Residuos peligrosos generados) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de gestión de residuos",
+    "indicador": "Generación de residuos por unidad atendida",
+    "formula": "Kilogramos de residuos / N.° de unidades atendidas",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de consumo de recursos",
+    "indicador": "Consumo de agua",
+    "formula": "Metros cúbicos consumidos en el periodo",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de consumo de recursos",
+    "indicador": "Consumo de agua por unidad atendida",
+    "formula": "Metros cúbicos / N.° de unidades atendidas",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de consumo de recursos",
+    "indicador": "Consumo de energía eléctrica",
+    "formula": "Kilovatios-hora consumidos en el periodo",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de consumo de recursos",
+    "indicador": "Consumo de energía por unidad atendida",
+    "formula": "Kilovatios-hora / N.° de unidades atendidas",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de consumo de recursos",
+    "indicador": "Consumo de papel",
+    "formula": "Resmas consumidas en el periodo",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de control operacional",
+    "indicador": "Cumplimiento del Programa Anual de Manejo Ambiental",
+    "formula": "(Actividades ejecutadas / Actividades programadas a la fecha) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de control operacional",
+    "indicador": "Cumplimiento del programa de inspecciones ambientales",
+    "formula": "(Inspecciones ejecutadas / Inspecciones programadas) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de control operacional",
+    "indicador": "Levantamiento de hallazgos ambientales",
+    "formula": "(Hallazgos levantados en plazo / Hallazgos generados) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de control operacional",
+    "indicador": "Cumplimiento del programa de monitoreos",
+    "formula": "(Monitoreos ejecutados / Monitoreos programados) × 100",
+    "frecuencia": "Semestral"
+  },
+  {
+    "grupo": "Indicadores de control operacional",
+    "indicador": "Conformidad de resultados de monitoreo",
+    "formula": "(Parámetros dentro de límite / Parámetros medidos) × 100",
+    "frecuencia": "Por monitoreo"
+  },
+  {
+    "grupo": "Indicadores de control operacional",
+    "indicador": "Derrames y emergencias ambientales",
+    "formula": "N.° de eventos registrados en el periodo",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de control operacional",
+    "indicador": "Homologación ambiental de contratistas",
+    "formula": "(Contratistas homologados / Contratistas activos) × 100",
+    "frecuencia": "Trimestral"
+  },
+  {
+    "grupo": "Indicadores de capacitación y cumplimiento",
+    "indicador": "Cumplimiento del programa de capacitación ambiental",
+    "formula": "(Capacitaciones ejecutadas / Programadas) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de capacitación y cumplimiento",
+    "indicador": "Cobertura de capacitación ambiental",
+    "formula": "(Trabajadores capacitados / Trabajadores programados) × 100",
+    "frecuencia": "Mensual"
+  },
+  {
+    "grupo": "Indicadores de capacitación y cumplimiento",
+    "indicador": "Cumplimiento legal ambiental",
+    "formula": "(Requisitos cumplidos / Requisitos aplicables identificados) × 100",
+    "frecuencia": "Semestral"
+  }
+]
