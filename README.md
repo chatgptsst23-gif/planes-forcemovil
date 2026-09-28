@@ -2,7 +2,12 @@
 
 Sitio web de consulta del **Plan Anual de Seguridad y Salud en el Trabajo** y del **Plan Anual de Gestión Ambiental**.
 
-Es un sitio estático: no necesita base de datos, servidor de aplicaciones ni instalación de dependencias. Funciona en GitHub Pages tal como está.
+El repositorio contiene **dos formas de consulta que comparten el mismo contenido** (carpeta `datos/`):
+
+- **Versión web** (`index.html`): sitio estático para GitHub Pages.
+- **Versión Python** (`app_python/`): aplicación de escritorio. Ver [`app_python/LEEME.md`](app_python/LEEME.md).
+
+Ninguna de las dos necesita base de datos ni instalación de librerías.
 
 ---
 
@@ -15,6 +20,31 @@ Es un sitio estático: no necesita base de datos, servidor de aplicaciones ni in
 3. En *Source*, elija **Deploy from a branch**; rama `main` y carpeta `/ (root)`.
 4. Guarde. A los pocos minutos el sitio estará disponible en
    `https://<usuario>.github.io/<repositorio>/`
+
+### Si en GitHub la página aparece sin estilos
+
+Si ve el texto plano, en letra Times, con enlaces subrayados en morado y sin las tarjetas de los planes, **GitHub encontró `index.html` pero no las carpetas `assets/` y `datos/`**. Ocurre casi siempre al subir por la web de GitHub arrastrando archivos sueltos.
+
+Verifique que la raíz del repositorio se vea exactamente así:
+
+```
+index.html
+README.md
+.nojekyll
+assets/
+datos/
+app_python/
+herramientas/
+servir.py
+```
+
+Si faltan `assets/` o `datos/`:
+
+1. En el repositorio, pulse **Add file → Upload files**.
+2. Abra la carpeta descomprimida en el explorador, **seleccione todo su contenido** (Ctrl+A) y arrástrelo a la ventana de GitHub. Arrastrar desde el explorador conserva las carpetas; el botón *choose your files* no.
+3. Pulse **Commit changes** y espere uno o dos minutos.
+
+Compruebe también que `index.html` quede en la raíz y no dentro de una subcarpeta. Si GitHub muestra una carpeta `web/`, `planes-forcemovil-web/` o similar que contiene todo, Pages debe apuntar a esa carpeta o hay que mover su contenido a la raíz.
 
 ### En su computadora
 
@@ -34,7 +64,8 @@ Luego abra `http://localhost:8000` en el navegador. Para usar otro puerto: `pyth
 
 ```
 .
-├── index.html                  Única página del sitio
+├── index.html                  Única página del sitio web
+├── app_python/                 Aplicación de escritorio (ver app_python/LEEME.md)
 ├── servir.py                   Servidor local para revisión (no se usa en GitHub)
 ├── .nojekyll                   Evita que GitHub Pages procese el sitio con Jekyll
 │

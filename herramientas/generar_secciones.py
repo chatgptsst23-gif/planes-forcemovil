@@ -12,7 +12,7 @@ Uso:
 Entradas:
     ../contenido/plan_sst_p*.md
     ../contenido/plan_ma_p*.md
-    ../config_plan_v03.json
+    ../config_plan_v07.json
     ../config_ma_v01.json
 
 Salidas:
@@ -286,7 +286,7 @@ PLANES = [
         'nombre_corto': 'Plan de SST',
         'descripcion': 'Prevención de accidentes de trabajo, incidentes peligrosos y enfermedades ocupacionales.',
         'patron': 'contenido/plan_sst_p*_v01.md',
-        'config': 'config_plan_v03.json',
+        'config': 'config_plan_v07.json',
         'color': 'sst',
     },
     {

@@ -4,7 +4,7 @@
   "titulo_corto": "Plan de SST",
   "descripcion": "Prevención de accidentes de trabajo, incidentes peligrosos y enfermedades ocupacionales.",
   "codigo": "FM-SST-PL-001",
-  "version": "03",
+  "version": "07",
   "periodo": 2027,
   "secciones": [
     {
@@ -61,8 +61,12 @@
           "ancla": "3-4-normas-tecnicas-de-adopcion-voluntaria"
         },
         {
-          "titulo": "3.5. Documentos internos de referencia",
-          "ancla": "3-5-documentos-internos-de-referencia"
+          "titulo": "3.5. Aplicación del Reglamento de Seguridad Industrial",
+          "ancla": "3-5-aplicacion-del-reglamento-de-seguridad-indus"
+        },
+        {
+          "titulo": "3.6. Documentos internos de referencia",
+          "ancla": "3-6-documentos-internos-de-referencia"
         }
       ]
     },
