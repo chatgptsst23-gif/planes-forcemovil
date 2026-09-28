@@ -396,3 +396,46 @@ body{
   .contenido h2{page-break-after:avoid}
   .tabla-wrap,.formula{page-break-inside:avoid}
 }
+
+/* Identidad académica y tema oscuro */
+:root{
+  --azul:#93bdff;--azul-claro:#b8d3ff;--azul-suave:#1b304b;
+  --verde:#7de5ba;--verde-claro:#a0efd0;--verde-suave:#143b32;
+  --tinta:#f1f4fa;--tinta-media:#c3cad8;--tinta-suave:#9ca7ba;
+  --linea:#344052;--linea-suave:#293546;
+  --fondo:#101823;--fondo-alt:#1b2635;
+  --sombra:0 16px 38px rgba(0,0,0,.25);
+}
+.cabecera{background:#111b29}
+.marca-logo{width:39px;height:44px;object-fit:contain;background:none;border-radius:0}
+.identidad-academica{display:flex;align-items:center;gap:25px;margin:0 0 32px}
+.escudo-portada{width:108px;height:126px;object-fit:contain;flex-shrink:0}
+.universidad{margin:0 0 8px;font-size:22px;font-weight:750;line-height:1.25;color:#fff}
+.facultad,.escuela{margin:0;font-size:15px;line-height:1.5;color:var(--tinta-media)}
+.escuela{color:#e9c87a;font-weight:600}
+.portada-linea{height:1px;background:linear-gradient(90deg,#d6ad55,var(--linea),transparent);margin:0 0 28px}
+.firma-facultad{display:block;width:250px;max-width:70%;height:auto;filter:invert(1);opacity:.75;margin:-10px 0 29px}
+.portada{max-width:970px;margin-top:28px}
+.portada h1{font-size:clamp(32px,5vw,52px)}
+.tarjeta{background:#1a2636;border-color:#344255}
+.tarjeta:hover{background:#223247}
+.ficha-empresa{background:#182333}
+.nav-plan{background:transparent}
+.aviso-caja{background:#1b2635;color:var(--tinta);border:1px solid var(--linea)}
+.aviso-caja h2{color:#ff9f9f}
+.resultado mark{background:#765b20;color:#fff}
+.indice a.vacia .txt::after{color:var(--tinta-suave)}
+@media(max-width:640px){
+  .nav-plan{background:#111b29}
+  .marca-txt strong{font-size:13px}
+  .identidad-academica{gap:15px;align-items:flex-start}
+  .escudo-portada{width:65px;height:80px}
+  .universidad{font-size:17px}
+  .facultad,.escuela{font-size:12px}
+  .firma-facultad{width:190px}
+}
+@media print{
+  :root{--tinta:#111;--tinta-media:#333;--tinta-suave:#555;--fondo:#fff;--fondo-alt:#f5f5f5;--linea:#ccc}
+  body{background:#fff;color:#111}
+  .contenido th,.tabla-datos th{color:#111;background:#ddd}
+}

@@ -125,16 +125,15 @@ function pintarPortada() {
   const org = m.organizacion || {};
 
   if (org.razon_social) {
-    el.marcaRazon.textContent = org.razon_social;
     el.portadaEmpresa.textContent = org.razon_social;
-    document.title = `Planes de Gestión — ${org.razon_social}`;
+    document.title = `Planes de Gestión | UNMSM`
   }
 
   el.tarjetas.innerHTML = m.planes.map((p) => {
     const esMA = p.color === 'ma';
     const vars = esMA
-      ? '--tc:#1e5b3f;--tb:#e6f2ec'
-      : '--tc:#1f3864;--tb:#eaeff7';
+      ? '--tc:#7de5ba;--tb:#143b32'
+      : '--tc:#93bdff;--tb:#1b304b';
     return `
       <a class="tarjeta" href="#/${p.id}" style="${vars}">
         <span class="etiqueta">${esMA ? 'Medio ambiente' : 'Seguridad y salud'}</span>
