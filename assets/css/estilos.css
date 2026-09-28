@@ -439,3 +439,32 @@ body{
   body{background:#fff;color:#111}
   .contenido th,.tabla-datos th{color:#111;background:#ddd}
 }
+
+/* Portada centrada y presentación del equipo */
+.portada{text-align:center}
+.identidad-academica{flex-direction:column;align-items:center;text-align:center;gap:18px}
+.firma-facultad{margin:0 auto 28px}
+.portada-linea{background:linear-gradient(90deg,transparent,#d6ad55,transparent)}
+.equipo{margin:34px 0 40px}
+.equipo>h2{margin:0 0 24px;font-size:15px;letter-spacing:.13em;text-transform:uppercase;color:var(--tinta-suave)}
+.equipo-lista{display:flex;justify-content:center;flex-wrap:wrap;gap:26px 18px;list-style:none;padding:0;margin:0}
+.integrante{flex:0 1 164px;text-align:center}
+.integrante-foto{width:100px;height:100px;margin:0 auto 14px;border:2px solid #d6ad55;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#1b2a3e;box-shadow:0 0 0 6px rgba(214,173,85,.06)}
+.integrante-foto span{font-size:25px;font-weight:650;letter-spacing:.05em;color:#e9c87a}
+.integrante-foto img{display:block;width:100%;height:100%;object-fit:cover}
+.integrante h3{margin:0;font-size:15px;line-height:1.5;font-weight:650}
+.integrante h3 span{display:block;color:var(--tinta-media);font-size:13px;font-weight:400}
+.tarjeta .datos{justify-content:center}
+.ficha-empresa{text-align:left}
+@media(max-width:1000px){
+  .marca-txt strong{max-width:175px;font-size:12px;line-height:1.3}
+}
+@media(max-width:640px){
+  .identidad-academica{align-items:center}
+  .escudo-portada{width:85px;height:102px}
+  .integrante{flex-basis:135px}
+  .integrante-foto{width:86px;height:86px}
+  .equipo-lista{gap:24px 12px}
+  .tarjetas{grid-template-columns:minmax(0,1fr)}
+  .marca-txt strong{max-width:145px;font-size:11px}
+}
