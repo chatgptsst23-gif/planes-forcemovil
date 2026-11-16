@@ -9,8 +9,11 @@ Pantallas:
 
 import tkinter as tk
 from tkinter import ttk, messagebox
+import json
+import webbrowser
+from pathlib import Path
 
-from .datos import Plan, cargar_manifiesto, ErrorDatos
+from .datos import Plan, cargar_manifiesto, ErrorDatos, CARPETA_DATOS
 from .renderizador import configurar_estilos, pintar_html, FUENTE
 from .calculadora import Calculadora
 
@@ -188,9 +191,12 @@ class Aplicacion(tk.Tk):
                   command=self.mostrar_inicio).pack(side='left', padx=(14, 6), pady=12)
 
         self.botones_nav = {}
-        for clave, texto in [('secciones', 'Secciones'), ('politica', 'Política'),
-                             ('indicadores', 'Indicadores'), ('anexos', 'Anexos'),
-                             ('calculadora', 'Calculadora')]:
+        opciones = [('secciones', 'Secciones'), ('politica', 'Política'),
+                    ('indicadores', 'Indicadores'), ('anexos', 'Anexos')]
+        if self.plan.id == 'sst':
+            opciones.append(('estadisticas', 'Datos Excel'))
+        opciones.append(('calculadora', 'Calculadora'))
+        for clave, texto in opciones:
             b = ttk.Button(barra, text=texto, style='Nav.TButton',
                            command=lambda c=clave: self._navegar(c))
             b.pack(side='left', padx=1)
@@ -248,6 +254,7 @@ class Aplicacion(tk.Tk):
          'politica': self.ver_politica,
          'indicadores': self.ver_indicadores,
          'anexos': self.ver_anexos,
+         'estadisticas': self.ver_estadisticas,
          'calculadora': self.ver_calculadora}[clave]()
 
     def _al_elegir(self, _e):
@@ -330,6 +337,9 @@ class Aplicacion(tk.Tk):
         ttk.Label(cab, text='Indicadores', style='Titulo.TLabel').pack(anchor='w')
         ttk.Label(cab, style='Nota.TLabel',
                   text=f'{len(datos)} indicadores agrupados en {len(grupos)} familias.').pack(anchor='w', pady=(2, 10))
+        if self.plan.id == 'sst':
+            ttk.Button(cab, text='Abrir archivos Excel ficticios ↗',
+                       command=self.ver_estadisticas).pack(anchor='w', pady=(0, 10))
 
         filtro = ttk.Frame(cab)
         filtro.pack(anchor='w')
@@ -378,14 +388,62 @@ class Aplicacion(tk.Tk):
         cb.bind('<<ComboboxSelected>>', llenar)
         llenar()
 
+
+    def _recursos_excel(self):
+        """Carga los ejemplos opcionales; nunca sustituye los datos reales."""
+        ruta = CARPETA_DATOS / 'sst' / 'estadisticas.json'
+        if self.plan.id != 'sst' or not ruta.exists():
+            return []
+        try:
+            with ruta.open(encoding='utf-8') as archivo:
+                return json.load(archivo).get('recursos', [])
+        except (OSError, ValueError):
+            return []
+
+    def _insertar_enlace_excel(self, texto_widget, recurso):
+        """Vínculo local seguro a los XLSX del directorio de ejemplos."""
+        nombre = Path(recurso.get('archivo', ''))
+        raiz = (CARPETA_DATOS / 'sst' / 'estadisticas').resolve()
+        destino = (CARPETA_DATOS / 'sst' / nombre).resolve()
+        if destino.parent != raiz or destino.suffix.lower() != '.xlsx' or not destino.is_file():
+            return
+        etiqueta = f"archivo_{len(texto_widget.tag_names())}"
+        texto_widget.insert('end', 'Abrir Excel ilustrativo  ↗\n', (etiqueta,))
+        texto_widget.tag_configure(etiqueta, foreground='#1f6d4a', underline=True)
+        texto_widget.tag_bind(etiqueta, '<Button-1>',
+                              lambda _e, ruta=destino: webbrowser.open(ruta.as_uri()))
+        texto_widget.tag_bind(etiqueta, '<Enter>', lambda _e: texto_widget.config(cursor='hand2'))
+        texto_widget.tag_bind(etiqueta, '<Leave>', lambda _e: texto_widget.config(cursor='arrow'))
+
+    def ver_estadisticas(self):
+        """Abre los Excel ficticios desde la aplicación de escritorio."""
+        self._marcar_nav('estadisticas')
+        t = self._texto_con_scroll()
+        t.insert('end', 'Estadísticas SST: ejemplos 2027\n', ('h2',))
+        t.insert('end', 'DATOS FICTICIOS: ejercicios académicos, no cifras ni registros reales de FORCEMOVIL.\n\n', ('p',))
+        recursos = self._recursos_excel()
+        if not recursos:
+            t.insert('end', 'No se encontraron los archivos de demostración.\n', ('p',))
+        for recurso in recursos:
+            t.insert('end', recurso.get('titulo', '') + '\n', ('h4',))
+            t.insert('end', recurso.get('descripcion', '') + '\n', ('p',))
+            self._insertar_enlace_excel(t, recurso)
+            t.insert('end', '\n', ('p',))
+        t.configure(state='disabled')
+
     def ver_anexos(self):
         self._marcar_nav('anexos')
         t = self._texto_con_scroll()
         t.insert('end', 'Anexos\n', ('h2',))
         t.insert('end', f'El plan contempla {len(self.plan.anexos)} anexos.\n\n', ('p',))
+        recursos = self._recursos_excel()
         for a in self.plan.anexos:
             t.insert('end', f"Anexo {a['numero']}.  ", ('h4',))
             t.insert('end', f"{a['titulo']}\n", ('p',))
+            ejemplo = next((r for r in recursos if int(a['numero']) in r.get('anexos', [])), None)
+            if ejemplo:
+                self._insertar_enlace_excel(t, ejemplo)
+                t.insert('end', '\n', ('p',))
         t.configure(state='disabled')
 
     def ver_calculadora(self):

@@ -193,3 +193,26 @@ Para citar un capítulo en una presentación o en un correo, copie la dirección
 Los planes son documentos de gestión. Cuando se corrija un punto en el sitio, la misma corrección debe aplicarse al documento en Word, y a la inversa. Si ambas versiones se editan por separado, terminan diciendo cosas distintas.
 
 La forma más segura de evitarlo es mantener los archivos Markdown como única fuente y regenerar el sitio con `herramientas/generar_secciones.py` cada vez que el plan cambie.
+
+
+---
+
+## 9. Estadísticas SST de demostración (2027)
+
+La versión web incorpora la ruta [Datos Excel](https://chatgptsst23-gif.github.io/planes-forcemovil/#/sst/estadisticas), accesible desde la barra de navegación del Plan de SST. También se muestran enlaces contextuales en los capítulos 5, 8, 11, 12, 13, 14 y 16, en **Indicadores** y en los anexos relacionados.
+
+Se incluyen cinco archivos `.xlsx` en `datos/sst/estadisticas/`:
+
+| Archivo | Contenido ilustrativo |
+|---|---|
+| `Accidentabilidad_SST_2027_DEMO.xlsx` | Horas-hombre, accidentes incapacitantes, días perdidos e IF, IS e IA. |
+| `Capacitaciones_SST_2027_DEMO.xlsx` | Capacitaciones, cobertura, inducción y evaluaciones. |
+| `Inspecciones_SST_2027_DEMO.xlsx` | Inspecciones, hallazgos y acciones correctivas. |
+| `Emergencias_SST_2027_DEMO.xlsx` | Simulacros, brigadas y operatividad de equipos. |
+| `Gestion_Indicadores_SST_2027_DEMO.xlsx` | Metas, cumplimiento del programa, presupuesto y contratistas. |
+
+Cada libro contiene dos hojas, identificadores de ejemplo y fórmulas compatibles con Excel. La aplicación Python dispone también de la pestaña **Datos Excel**, que abre estos archivos de forma local cuando se ejecuta desde una copia completa del repositorio.
+
+**Advertencia indispensable:** todo el contenido de estos archivos es **ficticio**, incluso los ejemplos de accidentabilidad y de incidentes. Se utiliza únicamente con fines académicos y para ilustrar el funcionamiento de los indicadores, y **no debe citarse como estadística real de FORCEMOVIL S.A.C.** La información del plan se conserva separada de esta simulación. Para modificar las tarjetas o sus vínculos sin cambiar el código, edite `datos/sst/estadisticas.json`.
+
+Los enlaces apuntan a archivos servidos por GitHub Pages; al hacer clic se descargan y se pueden abrir en Microsoft Excel o en una hoja de cálculo compatible.

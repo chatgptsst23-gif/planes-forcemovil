@@ -468,3 +468,33 @@ body{
   .tarjetas{grid-template-columns:minmax(0,1fr)}
   .marca-txt strong{max-width:145px;font-size:11px}
 }
+
+/* Archivos Excel de demostración del Plan Anual SST */
+.aviso-demo{border-left:4px solid #e7ba54;background:rgba(225,173,69,.13);padding:14px 17px;margin:17px 0 22px;border-radius:0 8px 8px 0;font-size:14px;color:var(--tinta-media)}
+.aviso-demo strong{color:#edcb7f}
+.enlace-excel{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;margin:3px 2px 3px 0;border:1px solid #4e9978;border-radius:7px;color:#9be5c0;text-decoration:none;font-size:13px;font-weight:650;line-height:1.4;max-width:100%}
+.enlace-excel:hover,.enlace-excel:focus-visible{background:rgba(94,163,131,.19);border-color:#8de1b5;color:#e0ffef}
+.enlace-excel span{font-size:17px}
+.enlace-todos{display:inline-block;color:#a6c8ff;font-size:13px;font-weight:650;text-decoration:underline;text-underline-offset:3px;margin-top:8px}
+.enlace-todos:hover{color:#fff}
+.cab-grupo-excel{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.cab-grupo-excel h3{margin:12px 0}
+.anexo-txt .enlace-excel{margin-top:8px}
+.panel-excel{padding:20px;border:1px solid #34516e;background:#17283b;border-radius:12px;margin:32px 0 15px}
+.panel-excel h3{margin:0 0 8px;color:#d7e8ff}
+.panel-excel p{font-size:14px;margin:0 0 14px;color:#bac9db}
+.panel-excel-enlaces{display:flex;gap:5px;flex-wrap:wrap}
+.indicadores-demo{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0 32px}
+.indicador-demo{background:#1b2d43;border:1px solid #36506c;border-radius:11px;padding:20px 16px;display:flex;flex-direction:column;gap:5px}
+.indicador-demo .cifra{font-size:clamp(23px,3vw,31px);font-weight:760;line-height:1.25;color:#a9d1ff}
+.indicador-demo strong{font-size:13px;line-height:1.4;color:#e9f1ff}
+.indicador-demo small{font-size:12px;color:#a9b9cb}
+.tarjetas-excel{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin:20px 0 18px}
+.tarjeta-excel{display:flex;flex-direction:column;gap:7px;background:#1a293b;border:1px solid #35516e;border-radius:12px;padding:20px;min-width:0}
+.tipo-excel{font-size:11px;text-transform:uppercase;font-weight:750;letter-spacing:.08em;color:#85dcab}
+.tarjeta-excel h4{font-size:17px;line-height:1.35;color:#e3eeff;margin:4px 0}
+.tarjeta-excel p{font-size:13.5px;line-height:1.6;color:#b9c6d5;margin:0 0 7px;flex:1}
+.tarjeta-excel .enlace-excel{align-self:flex-start}
+.nota-enlaces{font-size:13px;color:var(--tinta-suave)}
+@media(max-width:640px){.tarjetas-excel{grid-template-columns:1fr}.indicadores-demo{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-plan a{font-size:11px;padding:7px 5px}}
+@media print{.enlace-excel,.panel-excel,.aviso-demo{display:none !important}}

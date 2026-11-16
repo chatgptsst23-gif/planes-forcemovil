@@ -29,6 +29,7 @@ const App = {
   cacheSecciones: {}, // html por "plan/archivo"
   indicadores: {},
   anexos: {},
+  estadisticas: {},
   planActual: null,
   seccionActual: null,
 };
@@ -90,14 +91,16 @@ function escaparHTML(t) {
 
 async function cargarPlan(idPlan) {
   if (App.indices[idPlan]) return App.indices[idPlan];
-  const [indice, indicadores, anexos] = await Promise.all([
+  const [indice, indicadores, anexos, estadisticas] = await Promise.all([
     traerJSON(`datos/${idPlan}/indice.json`),
     traerJSON(`datos/${idPlan}/indicadores.json`).catch(() => []),
     traerJSON(`datos/${idPlan}/anexos.json`).catch(() => []),
+    idPlan === 'sst' ? traerJSON('datos/sst/estadisticas.json').catch(() => null) : Promise.resolve(null),
   ]);
   App.indices[idPlan] = indice;
   App.indicadores[idPlan] = indicadores;
   App.anexos[idPlan] = anexos;
+  App.estadisticas[idPlan] = estadisticas;
   return indice;
 }
 
@@ -114,6 +117,18 @@ async function cargarTodasLasSecciones(idPlan) {
   const indice = await cargarPlan(idPlan);
   await Promise.all(indice.secciones.map((s) => cargarSeccion(idPlan, s.archivo)));
   return indice;
+}
+
+
+/* Los Excel son simulaciones académicas, no reportes oficiales. */
+function recursosExcel(idPlan) { return App.estadisticas[idPlan]?.recursos || []; }
+function enlaceExcel(recurso, texto = 'Descargar Excel de ejemplo') {
+  if (!recurso || !/^estadisticas\/[a-zA-Z0-9_-]+\.xlsx$/.test(recurso.archivo)) return '';
+  const ruta = `datos/sst/${recurso.archivo}`;
+  return `<a class="enlace-excel" href="${ruta}" download aria-label="${escaparHTML(texto + ': ' + recurso.titulo)}">▣ ${escaparHTML(texto)} <span aria-hidden="true">↓</span></a>`;
+}
+function avisoDemo() {
+  return '<div class="aviso-demo" role="note"><strong>Demostración académica:</strong> los valores de los archivos Excel son ficticios. No representan estadísticas, registros ni desempeño real de la empresa.</div>';
 }
 
 /* --------------------------------------------------------------------------
@@ -224,6 +239,8 @@ function modoPlan(indice) {
   el.lateral.hidden = false;
   el.navPlan.hidden = false;
   el.buscador.hidden = false;
+  const tabEstadisticas = document.querySelector('[data-sst-only]');
+  if (tabEstadisticas) tabEstadisticas.hidden = indice.id !== 'sst';
   el.piePlan.textContent =
     `${indice.titulo} · ${indice.codigo} · Versión ${indice.version} · Periodo ${indice.periodo}`;
 }
@@ -245,9 +262,19 @@ async function verSeccion(idPlan, numero) {
   el.migas.innerHTML =
     `<b>${escaparHTML(indice.titulo_corto)}</b> <span>›</span> <span>Capítulo ${sec.numero}</span>`;
 
+  const relacionados = idPlan === 'sst'
+    ? recursosExcel(idPlan).filter((r) => r.capitulos.includes(Number(sec.numero))) : [];
+  const panelDemo = relacionados.length ? `
+    <aside class="panel-excel">
+      <h3>Estadísticas de ejemplo · Plan SST 2027</h3>
+      <p>Archivos de cálculo relacionados con este capítulo. Todos contienen datos inventados.</p>
+      <div class="panel-excel-enlaces">${relacionados.map((r) => enlaceExcel(r, r.titulo)).join('')}</div>
+      <a class="enlace-todos" href="#/sst/estadisticas">Explorar todas las hojas Excel →</a>
+    </aside>` : '';
   el.contenido.innerHTML = `
     <h2><span class="numcap">${sec.numero}.</span>${escaparHTML(sec.titulo)}</h2>
     ${html.trim() ? html : '<div class="sin-contenido">Este numeral no tiene contenido registrado.</div>'}
+    ${panelDemo}
   `;
 
   const ant = indice.secciones[idx - 1];
@@ -278,6 +305,7 @@ async function verIndicadores(idPlan) {
     <h2>Indicadores</h2>
     <p>El plan define <strong>${datos.length} indicadores</strong>, agrupados en ${grupos.length} familias.
        Cada uno cuenta con su fórmula de cálculo y su frecuencia de medición.</p>
+    ${idPlan === 'sst' ? avisoDemo() + '<p><a class="enlace-todos" href="#/sst/estadisticas">Consultar estadísticas ficticias en Excel →</a></p>' : ''}
     <div class="filtros" id="filtrosInd">
       <button class="filtro activo" data-g="__todos">Todos (${datos.length})</button>
       ${grupos.map((g) => `<button class="filtro" data-g="${escaparHTML(g)}">${escaparHTML(g)} (${datos.filter((d) => d.grupo === g).length})</button>`).join('')}
@@ -291,7 +319,9 @@ async function verIndicadores(idPlan) {
     visibles.forEach((d) => { (porGrupo[d.grupo] ||= []).push(d); });
     $('#listaInd').innerHTML = Object.entries(porGrupo).map(([g, items]) => `
       <div class="grupo-ind">
-        <h3>${escaparHTML(g)}</h3>
+        <div class="cab-grupo-excel"><h3>${escaparHTML(g)}</h3>
+          ${idPlan === 'sst' ? enlaceExcel(recursosExcel(idPlan).find((r) => r.grupo === g) || (g === 'Indicadores de liderazgo y participación' ? recursosExcel(idPlan).find((r) => r.id === 'gestion') : null), 'Ejemplo Excel') : ''}
+        </div>
         <div class="tabla-ind">
           <table class="tabla-datos">
             <thead><tr><th style="width:32%">Indicador</th><th>Fórmula</th><th style="width:15%">Frecuencia</th></tr></thead>
@@ -358,16 +388,59 @@ async function verAnexos(idPlan) {
   el.contenido.innerHTML = `
     <h2>Anexos</h2>
     <p>El plan contempla <strong>${datos.length} anexos</strong>.</p>
+    ${idPlan === 'sst' ? avisoDemo() : ''}
     <div class="lista-anexos">
       ${datos.map((a) => `
         <div class="anexo">
           <div class="anexo-num">${a.numero}</div>
-          <div class="anexo-txt">${escaparHTML(a.titulo)}</div>
+          <div class="anexo-txt">${escaparHTML(a.titulo)}
+            ${idPlan === 'sst' ? (() => { const vinculado = recursosExcel(idPlan).find((r) => r.anexos.includes(Number(a.numero))); return vinculado ? '<div>' + enlaceExcel(vinculado, 'Excel ilustrativo') + '</div>' : ''; })() : ''}
+          </div>
         </div>`).join('')}
     </div>`;
 
   el.lateral.classList.remove('abierto');
   window.scrollTo(0, 0);
+}
+
+
+async function verEstadisticas(idPlan) {
+  const indice = await cargarPlan(idPlan);
+  if (idPlan !== 'sst') return verIndicadores(idPlan);
+  modoPlan(indice);
+  pintarIndice(indice, null, 'estadisticas');
+  marcarNav('estadisticas');
+  const estadisticas = App.estadisticas[idPlan];
+  el.migas.innerHTML = `<b>${escaparHTML(indice.titulo_corto)}</b> <span>›</span> <span>Estadísticas de ejemplo</span>`;
+  el.paginacion.innerHTML = '';
+  if (!estadisticas || !estadisticas.recursos?.length) {
+    el.contenido.innerHTML = '<h2>Datos Excel</h2><p>Los archivos de demostración no están disponibles.</p>';
+    return;
+  }
+  el.contenido.innerHTML = `
+    <h2>Estadísticas SST · Datos de ejemplo 2027</h2>
+    <p>Explore los indicadores con hojas de cálculo descargables, fórmulas y registros ficticios. Cada archivo contiene dos hojas de trabajo.</p>
+    ${avisoDemo()}
+    <div class="indicadores-demo">
+      ${estadisticas.indicadores_demo.map((d) => `
+        <div class="indicador-demo"><span class="cifra">${escaparHTML(d.valor)}</span>
+          <strong>${escaparHTML(d.etiqueta)}</strong><small>${escaparHTML(d.detalle)}</small></div>`).join('')}
+    </div>
+    <h3>Archivos Excel disponibles</h3>
+    <div class="tarjetas-excel">
+      ${estadisticas.recursos.map((r) => `
+        <div class="tarjeta-excel">
+          <span class="tipo-excel">XLSX · ${r.hojas} hojas · 2027</span>
+          <h4>${escaparHTML(r.titulo)}</h4>
+          <p>${escaparHTML(r.descripcion)}</p>
+          ${enlaceExcel(r)}
+        </div>`).join('')}
+    </div>
+    <p class="nota-enlaces">Los Excel se descargan al hacer clic; puede abrirlos en Excel o aplicaciones compatibles. Sus fórmulas se recalculan al abrir el archivo.</p>
+  `;
+  el.lateral.classList.remove('abierto');
+  window.scrollTo(0, 0);
+  el.principal.focus({ preventScroll: true });
 }
 
 async function verBusqueda(idPlan, consulta) {
@@ -440,6 +513,7 @@ async function enrutar() {
 
     switch (partes[1]) {
       case 'indicadores': return verIndicadores(idPlan);
+      case 'estadisticas': return verEstadisticas(idPlan);
       case 'politica':    return verPolitica(idPlan);
       case 'anexos':      return verAnexos(idPlan);
       case 'buscar':      return verBusqueda(idPlan, partes.slice(2).join('/'));

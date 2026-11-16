@@ -1,0 +1,131 @@
+{
+  "periodo": 2027,
+  "tipo": "simulacion_academica",
+  "aviso": "Datos estadísticos 100 % ficticios para demostración académica. No son reportes oficiales, resultados reales ni registros de FORCEMOVIL S.A.C.",
+  "indicadores_demo": [
+    {
+      "etiqueta": "Accidentes incapacitantes simulados",
+      "valor": "3",
+      "detalle": "Ejemplo 2027"
+    },
+    {
+      "etiqueta": "Índice de frecuencia simulado",
+      "valor": "8,30",
+      "detalle": "Por 1 000 000 h-h"
+    },
+    {
+      "etiqueta": "Índice de severidad simulado",
+      "valor": "80,20",
+      "detalle": "Por 1 000 000 h-h"
+    },
+    {
+      "etiqueta": "Cumplimiento de capacitaciones",
+      "valor": "95 %",
+      "detalle": "Ejemplo anual"
+    },
+    {
+      "etiqueta": "Cumplimiento de inspecciones",
+      "valor": "96 %",
+      "detalle": "Ejemplo anual"
+    }
+  ],
+  "recursos": [
+    {
+      "id": "accidentabilidad",
+      "titulo": "Accidentabilidad y severidad",
+      "descripcion": "Horas-hombre, accidentes, días perdidos e índices IF, IS e IA por mes; incluye eventos ilustrativos.",
+      "archivo": "estadisticas/Accidentabilidad_SST_2027_DEMO.xlsx",
+      "grupo": "Indicadores de resultado",
+      "capitulos": [
+        5,
+        8,
+        13,
+        14
+      ],
+      "anexos": [
+        2,
+        12,
+        13
+      ],
+      "hojas": 2
+    },
+    {
+      "id": "capacitaciones",
+      "titulo": "Capacitaciones e inducción",
+      "descripcion": "Cumplimiento mensual, cobertura, inducciones y eficacia de capacitación, con temario de ejemplo.",
+      "archivo": "estadisticas/Capacitaciones_SST_2027_DEMO.xlsx",
+      "grupo": "Indicadores de capacitación",
+      "capitulos": [
+        8,
+        11,
+        14
+      ],
+      "anexos": [
+        7,
+        12,
+        13
+      ],
+      "hojas": 2
+    },
+    {
+      "id": "inspecciones",
+      "titulo": "Inspecciones y observaciones",
+      "descripcion": "Programa de inspecciones, cierre de hallazgos y registro hipotético de condiciones inseguras.",
+      "archivo": "estadisticas/Inspecciones_SST_2027_DEMO.xlsx",
+      "grupo": "Indicadores preventivos",
+      "capitulos": [
+        5,
+        8,
+        11,
+        14
+      ],
+      "anexos": [
+        6,
+        10,
+        12,
+        13
+      ],
+      "hojas": 2
+    },
+    {
+      "id": "emergencias",
+      "titulo": "Simulacros y equipos de emergencia",
+      "descripcion": "Participación, tiempos de simulacro, operatividad de equipos y cobertura de brigadas.",
+      "archivo": "estadisticas/Emergencias_SST_2027_DEMO.xlsx",
+      "grupo": "Indicadores de preparación y respuesta ante emergencias",
+      "capitulos": [
+        8,
+        11,
+        14
+      ],
+      "anexos": [
+        8,
+        12,
+        13
+      ],
+      "hojas": 2
+    },
+    {
+      "id": "gestion",
+      "titulo": "Gestión, metas y presupuesto",
+      "descripcion": "Ejecución del Plan SST, gasto presupuestal, homologación de contratistas y matriz de metas.",
+      "archivo": "estadisticas/Gestion_Indicadores_SST_2027_DEMO.xlsx",
+      "grupo": "Indicadores de gestión del sistema",
+      "capitulos": [
+        8,
+        11,
+        12,
+        14,
+        16
+      ],
+      "anexos": [
+        3,
+        6,
+        12,
+        13,
+        14
+      ],
+      "hojas": 2
+    }
+  ]
+}
