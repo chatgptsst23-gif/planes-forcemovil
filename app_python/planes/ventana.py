@@ -193,8 +193,7 @@ class Aplicacion(tk.Tk):
         self.botones_nav = {}
         opciones = [('secciones', 'Secciones'), ('politica', 'Política'),
                     ('indicadores', 'Indicadores'), ('anexos', 'Anexos')]
-        if self.plan.id == 'sst':
-            opciones.append(('estadisticas', 'Datos Excel'))
+        opciones.append(('estadisticas', 'Datos Excel'))
         opciones.append(('calculadora', 'Calculadora'))
         for clave, texto in opciones:
             b = ttk.Button(barra, text=texto, style='Nav.TButton',
@@ -337,9 +336,8 @@ class Aplicacion(tk.Tk):
         ttk.Label(cab, text='Indicadores', style='Titulo.TLabel').pack(anchor='w')
         ttk.Label(cab, style='Nota.TLabel',
                   text=f'{len(datos)} indicadores agrupados en {len(grupos)} familias.').pack(anchor='w', pady=(2, 10))
-        if self.plan.id == 'sst':
-            ttk.Button(cab, text='Abrir archivos Excel ficticios ↗',
-                       command=self.ver_estadisticas).pack(anchor='w', pady=(0, 10))
+        ttk.Button(cab, text='Abrir archivos Excel ficticios ↗',
+                   command=self.ver_estadisticas).pack(anchor='w', pady=(0, 10))
 
         filtro = ttk.Frame(cab)
         filtro.pack(anchor='w')
@@ -391,8 +389,8 @@ class Aplicacion(tk.Tk):
 
     def _recursos_excel(self):
         """Carga los ejemplos opcionales; nunca sustituye los datos reales."""
-        ruta = CARPETA_DATOS / 'sst' / 'estadisticas.json'
-        if self.plan.id != 'sst' or not ruta.exists():
+        ruta = CARPETA_DATOS / self.plan.id / 'estadisticas.json'
+        if not ruta.exists():
             return []
         try:
             with ruta.open(encoding='utf-8') as archivo:
@@ -403,8 +401,8 @@ class Aplicacion(tk.Tk):
     def _insertar_enlace_excel(self, texto_widget, recurso):
         """Vínculo local seguro a los XLSX del directorio de ejemplos."""
         nombre = Path(recurso.get('archivo', ''))
-        raiz = (CARPETA_DATOS / 'sst' / 'estadisticas').resolve()
-        destino = (CARPETA_DATOS / 'sst' / nombre).resolve()
+        raiz = (CARPETA_DATOS / self.plan.id / 'estadisticas').resolve()
+        destino = (CARPETA_DATOS / self.plan.id / nombre).resolve()
         if destino.parent != raiz or destino.suffix.lower() != '.xlsx' or not destino.is_file():
             return
         etiqueta = f"archivo_{len(texto_widget.tag_names())}"
@@ -419,7 +417,7 @@ class Aplicacion(tk.Tk):
         """Abre los Excel ficticios desde la aplicación de escritorio."""
         self._marcar_nav('estadisticas')
         t = self._texto_con_scroll()
-        t.insert('end', 'Estadísticas SST: ejemplos 2027\n', ('h2',))
+        t.insert('end', 'Estadísticas del plan: ejemplos 2027\n', ('h2',))
         t.insert('end', 'DATOS FICTICIOS: ejercicios académicos, no cifras ni registros reales de FORCEMOVIL.\n\n', ('p',))
         recursos = self._recursos_excel()
         if not recursos:

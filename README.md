@@ -216,3 +216,23 @@ Cada libro contiene dos hojas, identificadores de ejemplo y fórmulas compatible
 **Advertencia indispensable:** todo el contenido de estos archivos es **ficticio**, incluso los ejemplos de accidentabilidad y de incidentes. Se utiliza únicamente con fines académicos y para ilustrar el funcionamiento de los indicadores, y **no debe citarse como estadística real de FORCEMOVIL S.A.C.** La información del plan se conserva separada de esta simulación. Para modificar las tarjetas o sus vínculos sin cambiar el código, edite `datos/sst/estadisticas.json`.
 
 Los enlaces apuntan a archivos servidos por GitHub Pages; al hacer clic se descargan y se pueden abrir en Microsoft Excel o en una hoja de cálculo compatible.
+
+
+---
+
+## 10. Estadísticas ambientales de demostración (2027)
+
+La pestaña **Datos Excel** también está disponible en [Plan de Medio Ambiente](https://chatgptsst23-gif.github.io/planes-forcemovil/#/ma/estadisticas) y en la aplicación de escritorio.
+
+Se incluyen cuatro libros con dos hojas cada uno, ubicados en `datos/ma/estadisticas/`:
+
+| Archivo | Ejemplo de contenido |
+|---|---|
+| `Residuos_Valorizacion_MA_2027_DEMO.xlsx` | Generación de residuos, residuos peligrosos, EO-RS y valorización. |
+| `Agua_Energia_Recursos_MA_2027_DEMO.xlsx` | Consumo de agua, energía y papel por periodo y unidad atendida. |
+| `Inspecciones_Monitoreos_MA_2027_DEMO.xlsx` | Inspecciones, hallazgos, monitoreos y derrames ficticios. |
+| `Capacitacion_Cumplimiento_MA_2027_DEMO.xlsx` | Sensibilización, formación ambiental y verificación de requisitos. |
+
+Los Excel están relacionados con las familias de indicadores ambientales y se pueden descargar desde los capítulos pertinentes y la vista de anexos. Sus valores y eventos son **100 % ficticios**, incluidos los posibles derrames y hallazgos; **no son datos oficiales de FORCEMOVIL S.A.C.** Los vínculos se administran en `datos/ma/estadisticas.json`.
+
+**Estado del contenido documental:** la incorporación de datos de demostración no modifica el cuerpo del plan ambiental, su índice ni su versión. Sigue siendo necesario cotejar el documento fuente actualizado antes de sustituir los capítulos publicados de la versión 01.

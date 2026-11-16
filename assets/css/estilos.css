@@ -498,3 +498,12 @@ body{
 .nota-enlaces{font-size:13px;color:var(--tinta-suave)}
 @media(max-width:640px){.tarjetas-excel{grid-template-columns:1fr}.indicadores-demo{grid-template-columns:repeat(2,minmax(0,1fr))}.nav-plan a{font-size:11px;padding:7px 5px}}
 @media print{.enlace-excel,.panel-excel,.aviso-demo{display:none !important}}
+
+/* Identidad verde de los indicadores ambientales de demostración. */
+body[data-plan="ma"] .indicador-demo{background:#162c2b;border-color:#376458}
+body[data-plan="ma"] .indicador-demo .cifra{color:#98e9bb}
+body[data-plan="ma"] .tarjeta-excel{background:#172e2d;border-color:#376458}
+body[data-plan="ma"] .panel-excel{background:#142c29;border-color:#376458}
+body[data-plan="ma"] .panel-excel h3{color:#c6ffe4}
+body[data-plan="ma"] .enlace-todos{color:#9de9bb}
+body[data-plan="ma"] .enlace-todos:hover{color:#e8fff0}

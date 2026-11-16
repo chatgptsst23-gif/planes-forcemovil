@@ -1,0 +1,129 @@
+{
+  "periodo": 2027,
+  "tipo": "simulacion_academica",
+  "aviso": "Datos 100 % ficticios para ilustrar la consulta de indicadores del Plan Anual de Gestión Ambiental de FORCEMOVIL S.A.C.; no son mediciones, resultados ni registros oficiales.",
+  "indicadores_demo": [
+    {
+      "etiqueta": "Residuos generados (simulados)",
+      "valor": "16 600 kg",
+      "detalle": "Enero–diciembre 2027"
+    },
+    {
+      "etiqueta": "Tasa de valorización",
+      "valor": "51 %",
+      "detalle": "Ejemplo anual"
+    },
+    {
+      "etiqueta": "Agua consumida",
+      "valor": "2 019 m³",
+      "detalle": "Simulación 2027"
+    },
+    {
+      "etiqueta": "Inspecciones ejecutadas",
+      "valor": "117",
+      "detalle": "Ejemplo anual"
+    },
+    {
+      "etiqueta": "Charlas ambientales",
+      "valor": "50",
+      "detalle": "Ejemplo anual"
+    }
+  ],
+  "recursos": [
+    {
+      "id": "residuos",
+      "titulo": "Residuos y valorización",
+      "descripcion": "Generación mensual de residuos, fracción peligrosa, tasa de valorización y trazabilidad por EO-RS.",
+      "archivo": "estadisticas/Residuos_Valorizacion_MA_2027_DEMO.xlsx",
+      "grupo": "Indicadores de gestión de residuos",
+      "capitulos": [
+        6,
+        8,
+        9,
+        11,
+        12,
+        14,
+        15
+      ],
+      "anexos": [
+        1,
+        3,
+        8,
+        10,
+        11
+      ],
+      "hojas": 2
+    },
+    {
+      "id": "recursos",
+      "titulo": "Consumo de agua, energía y papel",
+      "descripcion": "Indicadores mensuales absolutos y por unidad atendida, con criterios de lectura para los recursos.",
+      "archivo": "estadisticas/Agua_Energia_Recursos_MA_2027_DEMO.xlsx",
+      "grupo": "Indicadores de consumo de recursos",
+      "capitulos": [
+        6,
+        9,
+        11,
+        12,
+        14,
+        20
+      ],
+      "anexos": [
+        3,
+        7,
+        11
+      ],
+      "hojas": 2
+    },
+    {
+      "id": "inspecciones",
+      "titulo": "Inspecciones, monitoreos y derrames",
+      "descripcion": "Seguimiento del programa ambiental, cierre de hallazgos, monitoreos y eventos de derrames hipotéticos.",
+      "archivo": "estadisticas/Inspecciones_Monitoreos_MA_2027_DEMO.xlsx",
+      "grupo": "Indicadores de control operacional",
+      "capitulos": [
+        8,
+        9,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "anexos": [
+        3,
+        5,
+        6,
+        9,
+        11
+      ],
+      "hojas": 2
+    },
+    {
+      "id": "capacitacion",
+      "titulo": "Capacitación y cumplimiento ambiental",
+      "descripcion": "Cumplimiento y cobertura de capacitación, verificación legal y temario referencial.",
+      "archivo": "estadisticas/Capacitacion_Cumplimiento_MA_2027_DEMO.xlsx",
+      "grupo": "Indicadores de capacitación y cumplimiento",
+      "capitulos": [
+        9,
+        10,
+        12,
+        13,
+        17,
+        18,
+        19,
+        20
+      ],
+      "anexos": [
+        2,
+        4,
+        7,
+        11
+      ],
+      "hojas": 2
+    }
+  ]
+}
